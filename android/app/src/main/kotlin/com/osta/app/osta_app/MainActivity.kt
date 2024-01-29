@@ -1,0 +1,6 @@
+package com.osta.app.osta_app
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
