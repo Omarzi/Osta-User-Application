@@ -8,6 +8,7 @@ class OColors {
   static const Color primary = Color(0xFF30C7D1);
   static const Color primaryDark = Colors.blueGrey;
   static const Color accent = Color(0xFFB0C7FF);
+  static const Color blue = Color(0xFF2370A2);
 
   /// Gradient Colors
   static const Gradient linerGradient = LinearGradient(
@@ -47,7 +48,11 @@ class OColors {
   static const Color error = Color(0xFFD32F2F);
   static const Color success = Color(0xFF388E3C);
   static const Color warning = Color(0xFFF57C00);
+  static const Color warning2 = Color(0xFFFECC00);
   static const Color info = Color(0xFF1976D2);
+
+  /// Text Form Field Colors
+  static const Color labelColor = Color(0xFF9C9C9C);
 
   /// Neutral Shades
   static const Color black = Color(0xFF232323);
@@ -60,4 +65,12 @@ class OColors {
   static const Color lightGrey = Color(0xFFF9F9F9);
   static const Color white = Color(0xFFFFFFFF);
   static const Color transparent = Colors.transparent;
+
+  static const Color bgCall =Color(0xFFD1F6F2);
+  static const Color iconCall =Color(0xFF1EC1AD);
+  static const Color bgLocation =Color(0xFFFAE1DF);
+  static const Color iconLocation =Color(0xFFEA6A53);
+  static const Color textForm =Color(0xFFF1F1F2);
+
+
 }

@@ -6,18 +6,14 @@ class MoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-=======
+
       /// AppBar
->>>>>>> bb7c7c4 (first commit)
       appBar: OAppBar(
         title: SvgPicture.asset(OImages.appIcon, height: 26.h),
         centerTitle: true,
       ),
-<<<<<<< HEAD
-=======
+
       /// Body
->>>>>>> bb7c7c4 (first commit)
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: OSizes.padding),

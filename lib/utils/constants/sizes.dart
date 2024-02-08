@@ -40,6 +40,7 @@ class OSizes {
   /// Default spacing between sections
   static final double defaultSpace = 24.h;
   static final double spaceBtwTexts = 4.h;
+  static final double spaceBtwTexts2 = 8.h;
   static final double spaceBtwItems = 16.h;
   static final double spaceBtwSections = 32.h;
 

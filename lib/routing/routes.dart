@@ -1,5 +1,6 @@
 import 'package:osta_app/features/authentication/presentation/login/all_data_login_screen.dart';
 import 'package:osta_app/features/authentication/presentation/onboarding/onboarding.dart';
+import 'package:osta_app/features/home/presentation/specific_category_screen.dart';
 import 'package:osta_app/features/splash/splash_screen.dart';
 import 'package:osta_app/navigation_menu.dart';
 import '../utils/constants/exports.dart';
@@ -47,34 +48,44 @@ class RouteGenerator {
           settings: settings,
           reverseDuration: const Duration(milliseconds: 250),
         );
-      // case ORoutesName.signupRoute:
-      //   return PageTransition(
-      //     child: const SignupScreen(),
-      //     type: PageTransitionType.fade,
-      //     settings: settings,
-      //     reverseDuration: const Duration(milliseconds: 250),
-      //   );
-      // case ORoutesName.forgetPasswordRoute:
-      //   return PageTransition(
-      //     child: const ForgetPassword(),
-      //     type: PageTransitionType.fade,
-      //     settings: settings,
-      //     reverseDuration: const Duration(milliseconds: 250),
-      //   );
-      // case ORoutesName.verifyCodeRoute:
-      //   return PageTransition(
-      //     child: const SendOTPScreen(),
-      //     type: PageTransitionType.fade,
-      //     settings: settings,
-      //     reverseDuration: const Duration(milliseconds: 250),
-      //   );
-      // case ORoutesName.resetPasswordRoute:
-      //   return PageTransition(
-      //     child: const ResetPasswordScreen(),
-      //     type: PageTransitionType.fade,
-      //     settings: settings,
-      //     reverseDuration: const Duration(milliseconds: 250),
-      //   );
+    // case ORoutesName.signupRoute:
+    //   return PageTransition(
+    //     child: const SignupScreen(),
+    //     type: PageTransitionType.fade,
+    //     settings: settings,
+    //     reverseDuration: const Duration(milliseconds: 250),
+    //   );
+    // case ORoutesName.forgetPasswordRoute:
+    //   return PageTransition(
+    //     child: const ForgetPassword(),
+    //     type: PageTransitionType.fade,
+    //     settings: settings,
+    //     reverseDuration: const Duration(milliseconds: 250),
+    //   );
+    // case ORoutesName.verifyCodeRoute:
+    //   return PageTransition(
+    //     child: const SendOTPScreen(),
+    //     type: PageTransitionType.fade,
+    //     settings: settings,
+    //     reverseDuration: const Duration(milliseconds: 250),
+    //   );
+    // case ORoutesName.resetPasswordRoute:
+    //   return PageTransition(
+    //     child: const ResetPasswordScreen(),
+    //     type: PageTransitionType.fade,
+    //     settings: settings,
+    //     reverseDuration: const Duration(milliseconds: 250),
+    //   );
+        /// ************************************* Home *********************************************
+
+      case ORoutesName.specificCategoryRoute:
+        final list = settings.arguments as String;
+        return PageTransition(
+          child:  SpecificCategoryScreen(title: list),
+          type: PageTransitionType.fade,
+          settings: settings,
+          reverseDuration: const Duration(milliseconds: 250),
+        );
 
       /// *************************************** End Authentication *************************************** \\\
 

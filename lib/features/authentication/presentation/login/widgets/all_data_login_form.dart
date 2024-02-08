@@ -50,7 +50,6 @@ class _AllDataOLoginFormState extends State<AllDataOLoginForm> {
               ),
               validator: (value) => OFormatter.formatUserName(value),
             ),
-
             /// Make Some Space
             SizedBox(height: OSizes.spaceBtwInputFields),
 

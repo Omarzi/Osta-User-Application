@@ -2,6 +2,7 @@ class OImages {
 
   /// -- App Logos
   static const String appLogoWithText = 'assets/images/logos/appLogoWithText.png';
+  static const String appLogoIcon = 'assets/images/logoIcon.png';
 
   /// -- App Icons
   static const String appIcon = 'assets/icons/ostaLogo.svg';
@@ -60,6 +61,31 @@ class OImages {
   static const String banner2 = 'assets/images/banner2.jpg';
   static const String banner3 = 'assets/images/banner3.png';
   static const String banner4 = 'assets/images/banner4.png';
+
+
+  /// Home
+  static const String market = 'assets/images/market.png';
+  static const String makeRequestAContractor = 'assets/images/makeRequestAContractor.png';
+  static const String quality = 'assets/images/quality.png';
+  static const String guarantee = 'assets/images/guarantee.png';
+  static const String completion = 'assets/images/completion.png';
+  static const String location = 'assets/images/location.png';
+  static const String write = 'assets/images/write.png';
+  static const String photoCamera = 'assets/images/photoCamera.png';
+  static const String coupon = 'assets/images/coupon.png';
+  static const String appointment = 'assets/images/appointment.png';
+
+  /// Chat
+  static const String zoomIn = 'assets/images/zoom-in.png';
+  static const String happiness = 'assets/images/happiness.png';
+  static const String camera = 'assets/images/camera.png';
+  static const String iconChat = 'assets/images/iconChat.png';
+  static const String applePay = 'assets/images/apple-pay.png';
+  static const String cash = 'assets/images/cash-stack.png';
+  static const String iconCard = 'assets/images/IconCard.png';
+  static const String iconMobile = 'assets/images/IconMobile.png';
+  static const String wallet = 'assets/images/wallet.png';
+  static const String close = 'assets/images/close.png';
 
   /// Products
   static const String product1 = 'assets/images/product1.png';

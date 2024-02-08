@@ -50,7 +50,6 @@ class OConstants {
     'Application language',
 
   ];
-
   static List<String> images = [
     'assets/images/logoIcon.png',
     'assets/images/chatIcon.png',
@@ -61,4 +60,34 @@ class OConstants {
     'assets/images/sharingIcon.png',
     'assets/images/translateIcon.png',
   ];
+
+  static List<String> category = [
+    'Electrics',
+    'Carpentry',
+    'plumber',
+    'building',
+    'cleanliness',
+    'gardens',
+    'Electrics',
+    'Carpentry',
+    'plumber',
+    'building',
+    'cleanliness',
+    'gardens',
+  ];
+  static List colors =[
+     Color(0xffAAB2E9),
+     Color(0xffE9AAC5),
+     Color(0xffAAE3E9),
+     Color(0xffBFE9AA),
+     Color(0xffE9BFAA),
+     Color(0xffDDAAE9),
+     Color(0xffAAB2E9),
+     Color(0xffE9AAC5),
+     Color(0xffAAE3E9),
+     Color(0xffBFE9AA),
+     Color(0xffE9BFAA),
+     Color(0xffDDAAE9),
+  ];
+
 }

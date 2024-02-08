@@ -10,6 +10,7 @@ class ORoutesName {
   static const String verifyCodeRoute = 'verify-code-route';
   static const String resetPasswordRoute = 'reset-password-route';
   static const String noConnectionRoute = 'no-connection-route';
+  static const String specificCategoryRoute = 'specific-Category-route';
 
   /// Navigation Bar
   static const String navigationMenuRoute = 'navigation-menu-route';

@@ -53,11 +53,30 @@ export 'package:osta_app/utils/theme/custom_themes/elevated_button_theme.dart';
 export 'package:osta_app/utils/theme/custom_themes/outlined_button_theme.dart';
 export 'package:osta_app/common/widgets/custom_popup_menu/custom_popup_menu.dart';
 export 'package:osta_app/common/manager/navigation_menu/navigation_menu_cubit.dart';
-<<<<<<< HEAD
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_container_in_bottom_specific_category.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_description_of_the_problem.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_calender_in_bottom_sheet.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_time_in_bottom_sheet.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_calender_in_bottom_sheet.dart';
+export '../../../../../common/widgets/button/custom_button_2.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_confirmation.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_confirmation2.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_data_of_user.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_des_of_the_money.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_send_message.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_send_text.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_buttom_navigation_in_chat.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_ended.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_buttom_sheet_in_specific_ctegory.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_center_in_specific_category.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_discount_code.dart';
+///<<<<<<< HEAD
 export 'package:osta_app/features/more/presentation/widgets/custom_container_in_more.dart';
-=======
->>>>>>> bb7c7c4 (first commit)
+///=======
+///>>>>>>> bb7c7c4 (first commit)
 export 'package:osta_app/features/authentication/presentation/login/phone_login_screen.dart';
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_head_in_specific_category.dart';
+export '../../../common/widgets/divider/custom_dots_divider.dart';
 export 'package:osta_app/features/home/presentation/widgets/custom_slider/custom_slider.dart';
 export 'package:osta_app/features/authentication/presentation/login/widgets/login_header.dart';
 export 'package:osta_app/features/authentication/managers/onboarding_cubit/onboarding_cubit.dart';
@@ -66,7 +85,7 @@ export 'package:osta_app/features/authentication/presentation/login/widgets/all_
 export 'package:osta_app/features/home/presentation/widgets/product_component/product_component.dart';
 export 'package:osta_app/common/widgets/primary_connectivity_wrapper/primary_connectivity_wrapper.dart';
 export 'package:osta_app/features/authentication/presentation/login/widgets/terms_conditions_checkbox.dart';
-<<<<<<< HEAD
-=======
-export 'package:osta_app/features/more/presentation/widgets/custom_container_in_more/custom_container_in_more.dart';
->>>>>>> bb7c7c4 (first commit)
+export 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_calender_in_bottom_sheet.dart';
+
+// export 'package:osta_app/features/more/presentation/widgets/custom_container_in_more/custom_container_in_more.dart';
+
