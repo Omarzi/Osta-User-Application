@@ -86,6 +86,7 @@ class OImages {
   static const String iconMobile = 'assets/images/IconMobile.png';
   static const String wallet = 'assets/images/wallet.png';
   static const String close = 'assets/images/close.png';
+  static const String correct = 'assets/images/correct.png';
 
   /// Products
   static const String product1 = 'assets/images/product1.png';

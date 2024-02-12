@@ -12,7 +12,7 @@ class CustomHeadInSpecificCategory extends StatelessWidget {
         children: [
           Container(
             height: 47.h,
-            width: 349.w,
+            width: double.infinity,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.r),
                 color: Color(0xffF3F3F3)),
@@ -29,22 +29,28 @@ class CustomHeadInSpecificCategory extends StatelessWidget {
           SizedBox(
             height: 10.h,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              CustomContainerInHead(
-                  color: Color(0xffFFE9EE),
-                  image: OImages.completion,
-                  title: "completion"),
-              CustomContainerInHead(
-                  color: Color(0xffC1FAE6),
-                  image: OImages.guarantee,
-                  title: "quarantee"),
-              CustomContainerInHead(
-                  color: Color(0xffFFF1CF),
-                  image: OImages.quality,
-                  title: "Quality"),
-            ],
+          Container(
+            width: double.infinity,
+            height: 100.h,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CustomContainerInHead(
+                    color: Color(0xffFFE9EE),
+                    image: OImages.completion,
+                    title: "completion"),
+                // SizedBox(width: OSizes.spaceBtwTexts2,),
+                CustomContainerInHead(
+                    color: Color(0xffC1FAE6),
+                    image: OImages.guarantee,
+                    title: "quarantee"),
+                // SizedBox(width: OSizes.spaceBtwTexts2,),
+                CustomContainerInHead(
+                    color: Color(0xffFFF1CF),
+                    image: OImages.quality,
+                    title: "Quality"),
+              ],
+            ),
           ),
           SizedBox(height: OSizes.space,),
 

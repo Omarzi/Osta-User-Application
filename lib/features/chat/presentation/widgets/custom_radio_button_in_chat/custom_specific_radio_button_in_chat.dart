@@ -1,23 +1,21 @@
 import '../../../../../utils/constants/exports.dart';
 
 class CustomSpecificRadioButtonInChat extends StatefulWidget {
-  CustomSpecificRadioButtonInChat({Key? key,required this.image,required this.text,required this.value}) : super(key: key);
-  String image,text;
-  int value;
+  CustomSpecificRadioButtonInChat({Key? key,required this.listTile,required this.text,required this.image}) : super(key: key);
+  Widget listTile;
+  String text,image;
 
   @override
   State<CustomSpecificRadioButtonInChat> createState() => _CustomSpecificRadioButtonState();
 }
-
 class _CustomSpecificRadioButtonState extends State<CustomSpecificRadioButtonInChat> {
-  int selectedOption = 4;
 
   @override
   Widget build(BuildContext context) {
     return  Card(
       child: Container(
-        height: 65.h,
-        padding: EdgeInsets.all(OSizes.sm),
+        height: MediaQuery.of(context).size.height/14,
+        padding: EdgeInsets.only(left: OSizes.sm,right: OSizes.sm),
         decoration: BoxDecoration(
           border: Border.all(
             color: OColors.grey,
@@ -29,31 +27,21 @@ class _CustomSpecificRadioButtonState extends State<CustomSpecificRadioButtonInC
         child: Row(
           children: [
             Expanded(
-              child: ListTile(
-                leading: Radio(
-                  activeColor: OColors.primary,
-                  value:widget.value,
-                  groupValue: selectedOption,
-                  onChanged: (value) {
-                    setState(() {
-                      selectedOption = widget.value!;
-                    });
-                  },
-                ),
-              ),
+              child: widget.listTile
             ),
             Row(
               children: [
-                Text("${widget.text}",
-                style: Theme.of(context).textTheme.bodyLarge,
+                Text(widget.text,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
                 SizedBox(width: OSizes.spaceBtwItems,),
-                Image.asset("${widget.image}"),
+                Image.asset(widget.image),
 
               ],
             ),
           ],
-        ),
+        )
+
       ),
     );
   }

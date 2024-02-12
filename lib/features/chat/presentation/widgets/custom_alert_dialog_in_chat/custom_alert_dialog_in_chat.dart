@@ -2,8 +2,11 @@ import 'package:dotted_border/dotted_border.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomAlertDialogInChat extends StatelessWidget {
-  const CustomAlertDialogInChat({Key? key}) : super(key: key);
-
+   CustomAlertDialogInChat({Key? key,required this.text,required this.image,required this.dottedColor,required this.bgCircle}) : super(key: key);
+ String text;
+ String image;
+ Color dottedColor;
+ Color bgCircle;
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -11,35 +14,20 @@ class CustomAlertDialogInChat extends StatelessWidget {
       backgroundColor: OColors.white,
       title: Column(
         children: [
-          Row(mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              GestureDetector(
-                onTap: (){
-                  context.pop();
-                },
-                child: CircleAvatar(
-                  radius: 15.r,
-                  backgroundColor: OColors.grey,
-                  child: Center(
-                    child: Icon(Icons.close,color: OColors.grey2,size: 20.sp,),
-                  ),
-                ),
-              ),
-            ],
-          ),
+          const CustomCloseButton(),
           DottedBorder(
             strokeWidth: 2,
-            color: OColors.primary,
+            color: dottedColor,
             borderType: BorderType.Circle,
-            radius: Radius.circular(12),
-            padding: EdgeInsets.all(6),
+            radius: const Radius.circular(12),
+            padding: const EdgeInsets.all(6),
             child: ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(12)),
+                borderRadius: const BorderRadius.all(Radius.circular(12)),
                 child: CircleAvatar(
-                  backgroundColor: OColors.warning2,
+                  backgroundColor: bgCircle,
                   radius: 50.r,
                   child: Center(
-                    child: Image.asset(OImages.close),
+                    child: Image.asset("$image"),
                   ),
                 )
             ),
@@ -48,8 +36,11 @@ class CustomAlertDialogInChat extends StatelessWidget {
       ),
       content: Row(mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('AlertDialog description',
-          style: Theme.of(context).textTheme.titleLarge,
+          SizedBox(
+            width: 200.w,
+            child: Text(text,
+            style: Theme.of(context).textTheme.titleMedium,
+            ),
           ),
         ],
       ),

@@ -1,4 +1,5 @@
 import '../../../../../../utils/constants/exports.dart';
+
 GlobalKey<FormState> allDataCreditCardFormKey = GlobalKey<FormState>();
 
 class CustomDataInElctronicWallet extends StatefulWidget {
@@ -12,15 +13,14 @@ class _CustomDataInElctronicWalletState extends State<CustomDataInElctronicWalle
   String selectedCountryCode = '+20';
 
   TextEditingController phoneController = TextEditingController();
-
   GlobalKey<FormState> phoneLoginFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: phoneLoginFormKey,
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 0),
+    return Padding(
+      padding:  EdgeInsets.only(top: OSizes.spaceBtwTexts,left: OSizes.spaceBtwTexts * 1.5,right: OSizes.spaceBtwTexts * 1.5),
+      child: Form(
+        key: phoneLoginFormKey,
         child: Column(
           children: [
             /// Phone Number

@@ -48,7 +48,9 @@ class OColors {
   static const Color error = Color(0xFFD32F2F);
   static const Color success = Color(0xFF388E3C);
   static const Color warning = Color(0xFFF57C00);
+  static const Color gold = Color(0xFFFBC10F);
   static const Color warning2 = Color(0xFFFECC00);
+  static const Color warning3 = Color(0xFFF8AE00);
   static const Color info = Color(0xFF1976D2);
 
   /// Text Form Field Colors

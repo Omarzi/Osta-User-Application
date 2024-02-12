@@ -1,7 +1,3 @@
-
-import 'package:osta_app/features/chat/presentation/widgets/custom_bottom_sheet/custom_bottom_sheet_in_chat.dart';
-import 'package:osta_app/features/chat/presentation/widgets/custom_radio_button_in_chat/custom_radio_button_in_chat.dart';
-
 import '../../../utils/constants/exports.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -66,7 +62,11 @@ class _ChatScreenState extends State<ChatScreen> {
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.start,
                        children: [
-                         CustomSendText(text: "Confirmation", time: "4:31PM"),
+                         GestureDetector(
+                             onTap: (){
+                               showBottomSheet2();
+                             },
+                             child: CustomSendText(text: "Confirmation", time: "4:31PM")),
                        ],
                      ),
                      SizedBox(height: OSizes.spaceBtwItems,),
@@ -85,7 +85,6 @@ class _ChatScreenState extends State<ChatScreen> {
                          CustomContainerConfirmation2(text: "Mustafa has arrived to you now, confirm arrival", textButton: "Have been reached",
                          onTap: (){},
                          ),
-
                        ],
                      ),
                      SizedBox(height: OSizes.spaceBtwItems,),
@@ -122,9 +121,7 @@ class _ChatScreenState extends State<ChatScreen> {
                            textButton: "Service ended",
                            width: 250.w,
                            onTap: (){},
-                         ),
-                       ],
-                     ),
+                         ),],),
                      SizedBox(height: OSizes.spaceBtwItems,),
                      /// Container Send  Text Message
                      Row(mainAxisAlignment: MainAxisAlignment.start,
@@ -134,7 +131,6 @@ class _ChatScreenState extends State<ChatScreen> {
                      ),
                      SizedBox(height: OSizes.spaceBtwItems,),
                      /// Container Send Message
-
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
                          CustomContainerConfirmation2(
@@ -143,14 +139,12 @@ class _ChatScreenState extends State<ChatScreen> {
                            },
                            text: "Please confirm payment",
                            textButton: "Payment",
-
                            width: 200.w,
                          ),
                        ],
                      ),
                      SizedBox(height: OSizes.spaceBtwItems,),
                      /// Container Send  Text Message
-
                      Align(
                        alignment: Alignment.bottomCenter,
                        child: Row(mainAxisAlignment: MainAxisAlignment.start,
@@ -158,14 +152,8 @@ class _ChatScreenState extends State<ChatScreen> {
                            CustomSendText(text: "The payment was made", time: "4:31PM"),
                          ],
                        ),
-                     ),
-
-                   ],
-                 ),
-               ),
-             ),
+                     ),],),),),
              CustomContainerDataOfUser(),
-
            ],
          ),
             bottomNavigationBar: Container(
@@ -181,6 +169,9 @@ class _ChatScreenState extends State<ChatScreen> {
 
    void showBottomSheet() {
      showModalBottomSheet(
+         shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(
+             topLeft: Radius.circular(OSizes.productImageRadius),
+             topRight: Radius.circular(OSizes.productImageRadius))),
          showDragHandle: false,
          isScrollControlled: true,
          context: context,
@@ -188,4 +179,16 @@ class _ChatScreenState extends State<ChatScreen> {
            return CustomBottomSheetInChat();
          });
    }
+  void showBottomSheet2() {
+    showModalBottomSheet(
+       shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(
+           topLeft: Radius.circular(OSizes.productImageRadius),
+           topRight: Radius.circular(OSizes.productImageRadius))),
+      isScrollControlled: true,
+      backgroundColor: OColors.white,
+        context: context,
+        builder: (context) {
+          return CustomBottomSheetToShowDetailsOfThePrice();
+        });
+  }
 }

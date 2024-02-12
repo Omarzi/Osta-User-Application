@@ -1,79 +1,70 @@
+import 'package:osta_app/features/chat/presentation/widgets/custom_text_form_feild_in_bottom_sheet_payment/custom_text_form_field_in_bottom_sheet_payment.dart';
+
 import '../../../../../../utils/constants/exports.dart';
+
 GlobalKey<FormState> allDataCreditCardFormKey = GlobalKey<FormState>();
 
 class CustomDataInCreditCard extends StatelessWidget {
-   CustomDataInCreditCard({Key? key}) : super(key: key);
+  CustomDataInCreditCard({Key? key}) : super(key: key);
   TextEditingController userNameController = TextEditingController();
   TextEditingController cardNumber = TextEditingController();
   TextEditingController mmyy = TextEditingController();
   TextEditingController cvv = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: allDataCreditCardFormKey,
-        child: Column(
-          children: [
-            ///User Name
-            TextFormField(
-              controller: userNameController,
-              keyboardType: TextInputType.name,
-              expands: false,
-              decoration: InputDecoration(
-                labelText: "userName".tr(context),
-                labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
+    return Padding(
+      padding: EdgeInsets.only(
+          top: OSizes.spaceBtwTexts,
+          left: OSizes.spaceBtwTexts,
+          right: OSizes.spaceBtwTexts),
+      child: Form(
+          key: allDataCreditCardFormKey,
+          child: Column(
+            children: [
+              ///User Name
+              CustomTextFormFeildINBotttomSheetPayment(
+                labelText: "User Name",
+                controller: userNameController,
               ),
-              validator: (value) => OFormatter.formatUserName(value),
-            ),
-            /// Make Some Space
-            SizedBox(height: OSizes.spaceBtwInputFields),
-            ///card Number
-            TextFormField(
-              controller: cardNumber,
-              keyboardType: TextInputType.name,
-              expands: false,
-              decoration: InputDecoration(
-                labelText: "Card Number",
-                labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-              ),
-              validator: (value) => OFormatter.formatUserName(value),
-            ),
-            /// Make Some Space
-            SizedBox(height: OSizes.spaceBtwInputFields),
-            Row(
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    controller: cvv,
-                    keyboardType: TextInputType.name,
-                    expands: false,
-                    decoration: InputDecoration(
-                      labelText: "CVV",
-                      labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                      hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                    ),
-                    validator: (value) => OFormatter.formatUserName(value),
-                  ),
-                ),
-                SizedBox(width: OSizes.spaceBtwItems,),
-                Expanded(
-                  child: TextFormField(
-                    controller: mmyy,
-                    keyboardType: TextInputType.name,
-                    expands: false,
-                    decoration: InputDecoration(
-                      labelText: "MM/YY",
-                      labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                      hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                    ),
-                    validator: (value) => OFormatter.formatUserName(value),
-                  ),
-                ),
 
-              ],
-            ),
-            SizedBox(height: 10.h,),
-    ],));
+              /// Make Some Space
+              SizedBox(height: OSizes.spaceBtwInputFields),
+
+              ///card Number
+              CustomTextFormFeildINBotttomSheetPayment(
+                labelText: "Card Number",
+                controller: cardNumber,
+              ),
+
+              /// Make Some Space
+              SizedBox(height: OSizes.spaceBtwInputFields),
+
+              /// CVV/ MM/YY
+              Row(
+                children: [
+                  Expanded(
+                    child: CustomTextFormFeildINBotttomSheetPayment(
+                      labelText: "CVV",
+                      controller: cvv,
+                    ),
+                  ),
+                  SizedBox(
+                    width: OSizes.spaceBtwItems,
+                  ),
+                  Expanded(
+                    child: CustomTextFormFeildINBotttomSheetPayment(
+                      labelText: "MM/YY",
+                      controller: mmyy,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 10.h,
+              ),
+            ],
+          )),
+    );
   }
 }

@@ -31,6 +31,36 @@ class OConstants {
     OImages.fishIcon,
     OImages.iceCreamIcon,
   ];
+  static  List<String> typeTextForBottomSheetInDetailsPrice=[
+    "The Price",
+    "Osta fees",
+    "Tax",
+    "Additional raw materials",
+    "Additional cost %20",
+  ];
+  static  List<String> priceTextForBottomSheetInDetailsPrice=[
+    "100 EGB",
+    "20 EGB",
+    "5 EGB",
+    "100 EGB",
+    "50 EGB",
+  ];
+
+  static  List<String> categoryInRequestAContactor=[
+    "Finishing",
+    "building",
+    "interior design",
+    "External design",
+    "Finishing",
+    "building",
+    "interior design",
+    "External design",
+    "Finishing",
+    "building",
+    "interior design",
+    "External design",
+  ];
+
 
   static List<String> bannersList = [
     OImages.banner,

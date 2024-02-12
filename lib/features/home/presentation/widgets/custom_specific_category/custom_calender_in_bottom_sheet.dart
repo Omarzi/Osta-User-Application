@@ -1,5 +1,3 @@
-import 'package:flutter_timeline_calendar/timeline/flutter_timeline_calendar.dart';
-import 'package:flutter_timeline_calendar/timeline/provider/instance_provider.dart';
 
 import '../../../../../utils/constants/exports.dart';
 

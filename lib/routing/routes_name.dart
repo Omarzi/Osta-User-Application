@@ -14,4 +14,7 @@ class ORoutesName {
 
   /// Navigation Bar
   static const String navigationMenuRoute = 'navigation-menu-route';
+
+  /// Home Screen
+ static const String homeOfRequestAContractor=" home_of_request_a_ontractor_route";
 }

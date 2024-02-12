@@ -1,7 +1,6 @@
-import 'package:osta_app/features/chat/presentation/chat_screen.dart';
 import 'package:osta_app/utils/constants/exports.dart';
 
-import 'widgets/custom_containers_in_center/custom_containers_in_center.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -30,7 +29,11 @@ class HomeScreen extends StatelessWidget {
             /// Two Categories (Market - Make Request A Contractor)
              Row(
                children: [
-                 CustomContainerInCenter(color1:Color(0xFFF9B501),color2: Color(0xFFFBC62E),title: "Make Request A Contractor",image: "${OImages.makeRequestAContractor}",),
+                 GestureDetector(
+                     onTap: (){
+                       Navigator.pushNamed(context, ORoutesName.homeOfRequestAContractor);
+                     },
+                     child: CustomContainerInCenter(color1:Color(0xFFF9B501),color2: Color(0xFFFBC62E),title: "Make Request A Contractor",image: "${OImages.makeRequestAContractor}",)),
                  CustomContainerInCenter(color1: Color(0xFF2ED3C1), color2: Color(0xFF33B4E5),title: "Market",image: "${OImages.market}",),
 
                ],

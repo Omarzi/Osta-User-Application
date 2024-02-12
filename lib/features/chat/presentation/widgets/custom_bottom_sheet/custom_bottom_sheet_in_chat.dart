@@ -1,12 +1,17 @@
-import 'package:osta_app/features/chat/presentation/widgets/custom_radio_button_in_chat/custom_radio_button_in_chat.dart';
-
-import '../../../../../common/widgets/button/custom_close_button.dart';
+import 'package:osta_app/features/chat/presentation/widgets/custom_bottom_sheet/custom_bottom_sheet_in_electronic_wallet.dart';
 import '../../../../../utils/constants/exports.dart';
-class CustomBottomSheetInChat extends StatelessWidget {
+
+class CustomBottomSheetInChat extends StatefulWidget {
   const CustomBottomSheetInChat({Key? key}) : super(key: key);
 
   @override
+  State<CustomBottomSheetInChat> createState() => _CustomBottomSheetInChatState();
+}
+
+class _CustomBottomSheetInChatState extends State<CustomBottomSheetInChat> {
+  @override
   Widget build(BuildContext context) {
+    bool electronicWallet=false;
     return Container(
       // height: 650.h,
       child: Padding(
@@ -38,12 +43,24 @@ class CustomBottomSheetInChat extends StatelessWidget {
               SizedBox(height: OSizes.spaceBtwItems,),
               CustomRadioButtonInChat(),
               SizedBox(height: 10.h,),
-              CustomButton2(text: "Sure", onTap: (){},width: 300.w,height: 50.h,)
+              CustomButton2(text: "Sure", onTap: (){
+               // electronicWallet ==true?
+                context.pop();
+               showBottomSheet();
+              },width: 300.w,height: 50.h,)
 
             ],
           ),
         ),
       ),
     );
+  }
+
+  void showBottomSheet() {
+    showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return CustomBottomSheetInElectronicWallet();
+        });
   }
 }

@@ -54,6 +54,9 @@ dependencies:
   # Check to Internet
   internet_connection_checker: ^1.0.0+1
 
+  #Flutter Rate
+  flutter_rating_bar: ^4.0.1
+
   # flutter_timeline_calendar
   flutter_timeline_calendar: ^1.0.9
   flutter_time_picker_spinner: ^2.0.0
