@@ -69,7 +69,7 @@ class _CustomBottomInSpecificCategoryState extends State<CustomBottomInSpecificC
       isScrollControlled: true,
         context: context,
         builder: (context) {
-          return CustomButtomSheetInSpecificCategory();
+          return CustomButtomSheetInSpecificCategory(title: "Schedule a visit");
         });
   }
 }

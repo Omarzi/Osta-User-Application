@@ -1,5 +1,8 @@
 import 'package:osta_app/features/chat/presentation/chat_screen.dart';
 import 'package:osta_app/features/more/presentation/more_screen.dart';
+import 'package:osta_app/features/my_order/presentation/my_order_screen.dart';
+import 'package:osta_app/features/profile/presentation/profile_screen.dart';
+import 'package:osta_app/features/wishlist/presentation/washlist_screen.dart';
 import 'package:osta_app/utils/constants/exports.dart';
 
 class NavigationMenu extends StatelessWidget {
@@ -35,16 +38,17 @@ class NavigationMenu extends StatelessWidget {
           return IndexedStack(
             index: selectedIndex,
             children: [
-              ChatScreen(),
               // OrdersScreen(),
-              Container(color: Colors.purple),
+              MyOrderScreen(),
               // WishListScreen(),
-              // Container(color: Colors.orange),
-              HomeScreen(),
+              const WashlistScreen(),
+              // HomeScreen
+              const HomeScreen(),
               // MoreScreen(),
-              MoreScreen(),
+              const MoreScreen(),
               // ProfileScreen(),
-              Container(color: Colors.pink),
+              ProfileScreen(),
+
             ],
           );
         },

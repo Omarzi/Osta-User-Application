@@ -47,6 +47,7 @@ class _CustomBottomSheetInElectronicWalletState extends State<CustomBottomSheetI
         context: context,
         builder: (BuildContext context){
           return   CustomAlertDialogInChat(
+            haveTitle: false,
             // text: "There is no e-wallet for this number",
             text: "There is not enough balance in your wallet",
             dottedColor: OColors.primary,

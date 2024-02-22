@@ -26,6 +26,7 @@ class CustomDataInCreditCard extends StatelessWidget {
               CustomTextFormFeildINBotttomSheetPayment(
                 labelText: "User Name",
                 controller: userNameController,
+                hintText: "Amira Adel",
               ),
 
               /// Make Some Space
@@ -35,6 +36,7 @@ class CustomDataInCreditCard extends StatelessWidget {
               CustomTextFormFeildINBotttomSheetPayment(
                 labelText: "Card Number",
                 controller: cardNumber,
+                hintText: "0000 0000 000 00",
               ),
 
               /// Make Some Space
@@ -47,6 +49,7 @@ class CustomDataInCreditCard extends StatelessWidget {
                     child: CustomTextFormFeildINBotttomSheetPayment(
                       labelText: "CVV",
                       controller: cvv,
+                      hintText: "cvv",
                     ),
                   ),
                   SizedBox(
@@ -56,6 +59,7 @@ class CustomDataInCreditCard extends StatelessWidget {
                     child: CustomTextFormFeildINBotttomSheetPayment(
                       labelText: "MM/YY",
                       controller: mmyy,
+                      hintText: "mm/yy",
                     ),
                   ),
                 ],

@@ -1,7 +1,7 @@
 import '../../../utils/constants/exports.dart';
 
 class CustomButton2 extends StatelessWidget {
-   CustomButton2({super.key, required this.text,this.height,this.width,required this.onTap});
+   CustomButton2({super.key, required this.text,this.height,this.width,required this.onTap,});
 
   final String text;
   double? height=50.h;
@@ -17,7 +17,7 @@ class CustomButton2 extends StatelessWidget {
         width: width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF2E648C), Color(0xFF49AFD4)],
+            colors: [Color(0xFF2E648C),Color(0xFF49AFD4)],
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
           ),
@@ -25,11 +25,7 @@ class CustomButton2 extends StatelessWidget {
         ),
             child: Center(
               child: Text(
-                text,
-                style: Theme.of(context)
-                    .textTheme
-                    .titleMedium!
-                    .copyWith(color: OColors.white, height: .5.h),
+                text, style: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.white, height: .5.h),
               ),
             )
       ),

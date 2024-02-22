@@ -22,7 +22,7 @@ class _CustomSpecificRadioButtonState extends State<CustomSpecificRadioButtonInC
             width: 1.w
           ),
             borderRadius: BorderRadius.circular(10.r),
-            color: OColors.light
+            color: OColors.white
         ),
         child: Row(
           children: [

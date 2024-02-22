@@ -64,6 +64,13 @@ dependencies:
   # dotted Border
   dotted_border: ^2.1.0
 
+  # To Call Backend
+  dio: ^5.4.0
+
+  # stepper
+  easy_stepper: ^0.8.3
+
+
   # Get Location => Map Services
   geolocator: ^10.1.0
   geocoding:

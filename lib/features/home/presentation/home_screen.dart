@@ -30,15 +30,15 @@ class HomeScreen extends StatelessWidget {
              Row(
                children: [
                  GestureDetector(
+                     onTap: (){context.pushNamed(ORoutesName.homeOfRequestAContractor);},
+                     child: CustomContainerInCenter(color1:Color(0xFFF9B501), color2: Color(0xFFFBC62E), title: "Make Request A Contractor", image: "${OImages.makeRequestAContractor}",)),
+                 GestureDetector(
                      onTap: (){
-                       Navigator.pushNamed(context, ORoutesName.homeOfRequestAContractor);
+                       context.pushNamed(ORoutesName.marketRoute);
                      },
-                     child: CustomContainerInCenter(color1:Color(0xFFF9B501),color2: Color(0xFFFBC62E),title: "Make Request A Contractor",image: "${OImages.makeRequestAContractor}",)),
-                 CustomContainerInCenter(color1: Color(0xFF2ED3C1), color2: Color(0xFF33B4E5),title: "Market",image: "${OImages.market}",),
-
+                     child: CustomContainerInCenter(color1: Color(0xFF2ED3C1), color2: Color(0xFF33B4E5), title: "Market", image: "${OImages.market}",)),
                ],
              ),
-
             /// All Another Categories
             GridView.builder(
               padding:  EdgeInsets.only(left:OSizes.spaceBetweenIcon ,right: OSizes.spaceBetweenIcon,),

@@ -24,6 +24,7 @@ class OColors {
   /// Text Colors
   static const Color textPrimary = Color(0xFF333333);
   static const Color textSecondary = Color(0xFF6C757D);
+  static const Color textgrey = Color(0xFF8A8A8A);
   static const Color textWhite = Colors.white;
 
   ///Background Colors
@@ -43,6 +44,7 @@ class OColors {
   /// Border Colors
   static const Color borderPrimary = Color(0xFFD9D9D9);
   static const Color borderSecondary = Color(0xFFE6E6E6);
+  static const Color borderTextFormField = Color(0xFFECECEC);
 
   /// Error and Validation Colors
   static const Color error = Color(0xFFD32F2F);
@@ -62,6 +64,7 @@ class OColors {
   static const Color darkGrey = Color(0xFF939393);
   static const Color grey = Color(0xFFE0E0E0);
   static const Color grey2 = Color(0xFF7C7C7C);
+  static const Color grey3 = Color(0xFF7E7E7E);
   static const Color bgColorOfCategoryComponent = Color(0xFFFCFCFC);
   static const Color softGrey = Color(0xFFF4F4F4);
   static const Color lightGrey = Color(0xFFF9F9F9);
@@ -73,6 +76,10 @@ class OColors {
   static const Color bgLocation =Color(0xFFFAE1DF);
   static const Color iconLocation =Color(0xFFEA6A53);
   static const Color textForm =Color(0xFFF1F1F2);
+  static const Color bgContainerInMyOrder1 =Color(0xFFCEEEEA);
+  static const Color textInMyOrder1 =Color(0xFF1BD4BE);
+  static const Color bgErrorContainer =Color(0xFFF6E2E1);
+  static const Color textError =Color(0xFFFC3C38);
 
 
 }

@@ -43,6 +43,7 @@ class OImages {
 
   /// Cart
   static const String emptyInCart = 'assets/images/emptyInCart.svg';
+  static const String cartIcon = 'assets/images/cart.svg';
 
   /// Offer
   static const String emptyInOffers = 'assets/images/emptyInOffers.svg';
@@ -52,6 +53,27 @@ class OImages {
 
   /// Orders
   static const String emptyInOrder = 'assets/images/emptyInOrders.svg';
+  static const String checkMarkDoneCircle = 'assets/images/checkmarkDoneCircle.png';
+  static const String redClose = 'assets/images/redClose.png';
+  static const String calender2 = 'assets/images/calender2.png';
+  static const String reload = 'assets/images/reload.png';
+
+  /// Market
+  static const String categoryMarket1="assets/images/airConditioner.png";
+  static const String categoryMarket2="assets/images/furniture.png";
+  static const String categoryMarket3="assets/images/laptop.png";
+
+  static const String subCategoryMarket1="assets/images/subCategory1.png";
+  static const String subCategoryMarket2="assets/images/subCategory2.png";
+  static const String subCategoryMarket3="assets/images/subCategory3.png";
+  static const String subCategoryMarket4="assets/images/subCategory4.png";
+
+  static const String favorite="assets/images/favorite.png";
+  static const String filter="assets/images/filter.png";
+  static const String ranking="assets/images/ranking.png";
+  static const String favorite2="assets/images/favorite.svg";
+  static const String plusIcon="assets/images/plus.svg";
+  static const String minusIcon="assets/images/minus.svg";
 
   /// My Addresses
   static const String emptyInMyAddresses = 'assets/images/emptyInAddresses.svg';
@@ -70,6 +92,7 @@ class OImages {
   static const String guarantee = 'assets/images/guarantee.png';
   static const String completion = 'assets/images/completion.png';
   static const String location = 'assets/images/location.png';
+  static const String location2 = 'assets/images/location2.png';
   static const String write = 'assets/images/write.png';
   static const String photoCamera = 'assets/images/photoCamera.png';
   static const String coupon = 'assets/images/coupon.png';
@@ -87,8 +110,38 @@ class OImages {
   static const String wallet = 'assets/images/wallet.png';
   static const String close = 'assets/images/close.png';
   static const String correct = 'assets/images/correct.png';
+  static const String creditCard = 'assets/images/creditCard.png';
+
+
+  /// Request Contactor
+  static const String calender = "assets/images/calender.png";
 
   /// Products
   static const String product1 = 'assets/images/product1.png';
+
+  /// Washlist
+  static const String redFavorite = "assets/images/redFavorite.svg";
+
+  /// Profile
+  static const String lockClosedIcon = "assets/icons/lockClosedIcon.svg";
+
+  /// More
+  static const String wallet2 = "assets/images/wallet2.png";
+  static const String edit = "assets/images/edit.png";
+  static const String delet = "assets/images/delet.png";
+  static const String happy = "assets/images/happy.png";
+  static const String sad = "assets/images/sad.png";
+  static const String three = "assets/images/three.png";
+  static const String instagramLogo = "assets/images/logos/instagram_logo.svg";
+  static const String whatsappLogo = "assets/images/logos/whatsapp_logo.svg";
+  static const String twitterLogo = "assets/images/logos/twitter_logo.svg";
+  static const String youtubeLogo = "assets/images/logos/youtube_logo.svg";
+  static const String tiktokLogo = "assets/images/logos/tiktok_logo.svg";
+  static const String giftBox = "assets/images/gift_box.png";
+  static const String invite = "assets/images/invite.png";
+  static const String gift = "assets/images/gift.png";
+  static const String copy = "assets/images/copy.png";
+  static const String notification = "assets/images/notification.png";
+
 
 }

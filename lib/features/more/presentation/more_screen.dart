@@ -32,12 +32,26 @@ class MoreScreen extends StatelessWidget {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
-                return CustomContainerInMore(text: OConstants.texts[index], imagePath: OConstants.images[index]);
+                return CustomContainerInMore(text: OConstants.texts[index], imagePath: OConstants.images[index],
+                    onTap: (){
+                 index == 0 ? context.pushNamed(ORoutesName.walletRoute):
+                 index == 1 ? context.pushNamed(ORoutesName.addressRoute):
+                 index == 2 ? context.pushNamed(ORoutesName.beAPartnerRoute):
+                 index == 3 ? context.pushNamed(ORoutesName.technicalSupportRout):
+                 index == 4 ? context.pushNamed(ORoutesName.helpCenterRoute):
+                 index == 5 ? context.pushNamed(ORoutesName.submitProposalsRoute):
+                 index == 6 ? context.pushNamed(ORoutesName.termsOfUseRoute):
+                 index == 8 ? context.pushNamed(ORoutesName.shareTheAppRoute):
+                 index == 10 ? context.pushNamed(ORoutesName.notificationRoute):
+                              Container();
+
+
+                });
               },
               separatorBuilder: (context, index) {
                 return SizedBox(height: OSizes.defaultSpace);
               },
-              itemCount: 8,
+              itemCount: OConstants.texts.length,
             ),
           ],
         ),

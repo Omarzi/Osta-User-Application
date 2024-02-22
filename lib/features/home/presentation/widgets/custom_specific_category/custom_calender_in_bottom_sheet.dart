@@ -1,9 +1,7 @@
-
 import '../../../../../utils/constants/exports.dart';
 
 class CustomCalenderInBottomSheet extends StatefulWidget {
-   CustomCalenderInBottomSheet({Key? key}) : super(key: key);
-
+   CustomCalenderInBottomSheet({Key? key,}) : super(key: key);
   @override
   State<CustomCalenderInBottomSheet> createState() => _CustomCalenderInBottomSheetState();
 }
@@ -35,7 +33,7 @@ class _CustomCalenderInBottomSheetState extends State<CustomCalenderInBottomShee
           differentStyleForToday: true,
           weekDayUnselectedColor: OColors.grey2,
           weekDaySelectedColor: OColors.grey2,
-          todayBackgroundColor: OColors.warning,
+          todayBackgroundColor: OColors.warning2,
           todayTextColor: Colors.white),
       headerOptions: HeaderOptions(
           weekDayStringType: WeekDayStringTypes.SHORT,

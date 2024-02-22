@@ -17,7 +17,7 @@ class _CustomCenterInSpecificCategoryState extends State<CustomCenterInSpecificC
       padding:  EdgeInsets.only(top: 10.h,bottom: 15.h),
       child: Column(
         children: [
-          CustomContainerAddressInSpecificCategory(),
+          CustomContainerAddressInSpecificCategory(imageLocation: OImages.location,isChecked: true),
           SizedBox(height: 7.h,),
           GestureDetector(
             onTap: (){

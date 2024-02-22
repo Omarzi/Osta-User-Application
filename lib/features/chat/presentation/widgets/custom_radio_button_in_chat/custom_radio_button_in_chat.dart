@@ -110,14 +110,14 @@ class _CustomRadioButtonInChatState extends State<CustomRadioButtonInChat> {
           ),
 
         ],
-      )
-       ;
+      );
   }
   void showAlertDialogForWallet() {
     showDialog(
         context: context,
         builder: (BuildContext context){
           return   CustomAlertDialogInChat(
+            haveTitle: false,
             text: "There is not enough balance in your wallet",
             dottedColor: OColors.primary,
             bgCircle: OColors.warning2,

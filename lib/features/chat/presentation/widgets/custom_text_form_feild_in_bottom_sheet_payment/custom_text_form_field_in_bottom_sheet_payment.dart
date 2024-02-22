@@ -1,9 +1,9 @@
 import '../../../../../utils/constants/exports.dart';
 
 class CustomTextFormFeildINBotttomSheetPayment extends StatelessWidget {
-   CustomTextFormFeildINBotttomSheetPayment({Key? key,required this.labelText,required this.controller}) : super(key: key);
+   CustomTextFormFeildINBotttomSheetPayment({Key? key,required this.labelText,required this.controller, required this.hintText}) : super(key: key);
     TextEditingController controller =TextEditingController();
-    String labelText;
+    String labelText,hintText;
   @override
   Widget build(BuildContext context) {
     return  TextFormField(
@@ -11,9 +11,11 @@ class CustomTextFormFeildINBotttomSheetPayment extends StatelessWidget {
       keyboardType: TextInputType.name,
       expands: false,
       decoration: InputDecoration(
+        floatingLabelBehavior: FloatingLabelBehavior.always,
         labelText: labelText,
+        hintText: hintText,
         labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-        hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
+        hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.grey2),
       ),
       validator: (value) => OFormatter.formatUserName(value),
     );

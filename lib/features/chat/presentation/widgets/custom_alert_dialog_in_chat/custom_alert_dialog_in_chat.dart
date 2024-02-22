@@ -2,11 +2,13 @@ import 'package:dotted_border/dotted_border.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomAlertDialogInChat extends StatelessWidget {
-   CustomAlertDialogInChat({Key? key,required this.text,required this.image,required this.dottedColor,required this.bgCircle}) : super(key: key);
+   CustomAlertDialogInChat({Key? key,required this.text,required this.image,required this.dottedColor,required this.bgCircle,this.title,required this.haveTitle}) : super(key: key);
  String text;
+ String? title;
  String image;
  Color dottedColor;
  Color bgCircle;
+ bool haveTitle = false;
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -32,6 +34,20 @@ class CustomAlertDialogInChat extends StatelessWidget {
                 )
             ),
           ),
+         haveTitle ? Column(
+           crossAxisAlignment: CrossAxisAlignment.center,
+           children: [
+             SizedBox(height: OSizes.spaceBtwTexts2),
+             Row(
+               mainAxisAlignment: MainAxisAlignment.center,
+               children: [
+                 SizedBox(
+                   width: 200.w,
+                     child: Text(title!,style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.primary),)),
+               ],
+             ),
+           ],
+         ):SizedBox(height: 0)
         ],
       ),
       content: Row(mainAxisAlignment: MainAxisAlignment.center,

@@ -1,8 +1,9 @@
 import '../../../../../utils/constants/exports.dart';
 
 class CustomContainerAddressInSpecificCategory extends StatelessWidget {
-  const CustomContainerAddressInSpecificCategory({Key? key}) : super(key: key);
-
+   CustomContainerAddressInSpecificCategory({Key? key,required this.imageLocation, required this.isChecked}) : super(key: key);
+String imageLocation;
+bool isChecked = true;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -25,7 +26,7 @@ class CustomContainerAddressInSpecificCategory extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Image.asset(OImages.location),
+            Image.asset(imageLocation),
             SizedBox(width: 20.w,),
             Column(mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,7 +46,7 @@ class CustomContainerAddressInSpecificCategory extends StatelessWidget {
               ],
             ),
             Spacer(),
-            Image.asset(OImages.write),
+          isChecked ? Image.asset(OImages.write) :SizedBox(),
           ],
         ),
       ),

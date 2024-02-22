@@ -1,5 +1,4 @@
 import 'package:osta_app/features/request_a_contractor/presentation/widget/custom_category_compnent_in_request_a_contractor/custom_category_compnent_in_request_a_contractor.dart';
-
 import '../../../utils/constants/exports.dart';
 
 class HomeOfRequestAContractor extends StatelessWidget {
@@ -36,7 +35,7 @@ class HomeOfRequestAContractor extends StatelessWidget {
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
                   return  customCategoryCompnentInRequestAContractor(productName: OConstants.categoryInRequestAContactor[index],onTap: (){
-                    Navigator.pushNamed(context, ORoutesName.specificCategoryRoute,arguments: OConstants.category[index]);
+                    Navigator.pushNamed(context, ORoutesName.specificOfCategoryInRequestContactor,arguments: OConstants.categoryInRequestAContactor[index]);
                   },);
                 },
                 itemCount:OConstants.categoryInRequestAContactor.length,
