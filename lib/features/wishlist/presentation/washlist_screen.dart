@@ -8,15 +8,12 @@ class WashlistScreen extends StatelessWidget {
     return Scaffold(
       appBar: OAppBar(
         leadingWidget: IconButton(onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChatScreen()));
         }, icon: Badge.count(count: 0, backgroundColor: const Color(0xffE5CC13), textColor: OColors.black, child: const Icon(Iconsax.notification)), color: OColors.white),
         title: SvgPicture.asset(OImages.appIcon, height: 26.h),
         centerTitle: true,
         actions: [
-          Icon(Iconsax.location, size: 23.sp, color: OColors.white),
-          SizedBox(width: OSizes.spaceBetweenIcon),
-          Text('Favorite', style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.w600, color: OColors.white)),
-          SizedBox(width: OSizes.sm),
+          IconButton(icon: Icon(Iconsax.location, size: 23.sp), color: OColors.white,onPressed: (){context.pushNamed(ORoutesName.addressRoute);}),
         ],
       ),
       body: SingleChildScrollView(

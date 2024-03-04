@@ -12,7 +12,7 @@ class HelpCenterScreen extends StatelessWidget {
         centerTitle: true,
         leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white,),
       ),
-      body: Padding(
+        body: Padding(
         padding: EdgeInsets.all(OSizes.spaceBtwTexts2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,8 +36,7 @@ class HelpCenterScreen extends StatelessWidget {
                   itemBuilder: (context,index){
                     return GestureDetector(
                         onTap: (){
-                          index == 0 ? context.pushNamed(ORoutesName.specificHelpCenterRoute,arguments:OConstants.textOfHelpCenter[0]):
-                                        Container();
+                          index == 0 ? context.pushNamed(ORoutesName.specificHelpCenterRoute,arguments:OConstants.textOfHelpCenter[0]): Container();
                         },
                         child: CustomContainerHelpCenter(textHelpCenter: OConstants.textOfHelpCenter[index]));
                   }),

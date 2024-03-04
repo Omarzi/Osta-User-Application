@@ -49,7 +49,7 @@ class CustomProductInDetailsOrder extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Cool Horse 3 Tornado split digital air conditioner, ultra-fast cooling"),
+                  const Text("Cool Horse 3 Tornado split digital air conditioner, ultra-fast cooling"),
                   SizedBox(height: OSizes.spaceBtwTexts,),
                   Text("x1",style: Theme.of(context).textTheme.titleSmall!.copyWith(color: OColors.grey3)),
                   SizedBox(height: OSizes.spaceBtwTexts,),
@@ -58,7 +58,6 @@ class CustomProductInDetailsOrder extends StatelessWidget {
               ),
             ),
           ),
-
         ],
       ),
     );

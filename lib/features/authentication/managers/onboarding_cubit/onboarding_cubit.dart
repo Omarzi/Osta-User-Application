@@ -1,4 +1,3 @@
-import 'package:osta_app/features/authentication/managers/onboarding_cubit/onboarding_state.dart';
 import 'package:osta_app/utils/constants/exports.dart';
 
 class OnBoardingCubit extends Cubit<OnBoardingState> {
@@ -19,17 +18,25 @@ class OnBoardingCubit extends Cubit<OnBoardingState> {
   void nextPage({required BuildContext context}) {
     final currentState = state;
     if (currentState.currentPageIndex == 2) {
-      context.pushNamed(ORoutesName.phoneLoginRoute);
-      // context.pushNamed(ORoutesName.loginRoute);
+      Navigator.of(context).pushNamed(ORoutesName.phoneLoginRoute);
     } else {
       final nextPage = currentState.currentPageIndex + 1;
-      pageController.jumpToPage(nextPage);
+      pageController.animateToPage(
+        nextPage,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
       emit(OnBoardingState(nextPage));
     }
   }
 
   void skipPage() {
-    pageController.jumpToPage(2);
-    emit(OnBoardingState(2));
+    const nextPage = 2;
+    pageController.animateToPage(
+      nextPage,
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
+    );
+    emit(OnBoardingState(nextPage));
   }
 }

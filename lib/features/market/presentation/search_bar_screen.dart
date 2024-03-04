@@ -1,15 +1,14 @@
-import 'package:osta_app/features/market/presentation/widget/custom_search_bar/custom_search_bar.dart';
-
 import '../../../utils/constants/exports.dart';
 
 class SearchBarScreen extends StatefulWidget {
-  const SearchBarScreen({Key? key}) : super(key: key);
+   SearchBarScreen({Key? key}) : super(key: key);
 
   @override
   State<SearchBarScreen> createState() => _ListViewSearchExampleState();
 }
 
 class _ListViewSearchExampleState extends State<SearchBarScreen> {
+  TextEditingController controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +26,7 @@ class _ListViewSearchExampleState extends State<SearchBarScreen> {
         child: Column(
           children: [
             /// Search
-            CustomSearchBar(),
+            CustomTextFormFieldSearch(controller: controller ,hintText: "Search for product, dealer name",suffixIcon: const Icon(Icons.search),suffixIconColor: OColors.textInMyOrder1),
           ],
         ),
       ),

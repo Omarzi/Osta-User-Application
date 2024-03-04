@@ -1,24 +1,23 @@
 import '../../../../../utils/constants/exports.dart';
 
-class CustomTextFormFeild2 extends StatelessWidget {
-  CustomTextFormFeild2({Key? key,required this.labelText,required this.hintText,required this.controller}) : super(key: key);
-  TextEditingController controller =TextEditingController();
-  String labelText,hintText;
+class CustomTextFormField2 extends StatelessWidget {
+  CustomTextFormField2({Key? key,required this.textEditingController,required this.labelText, this.suffixIcon}) : super(key: key);
+
+  TextEditingController textEditingController=TextEditingController();
+  String labelText;
+  Widget? suffixIcon;
+
   @override
   Widget build(BuildContext context) {
-    return  TextFormField(
-      controller: controller,
-      keyboardType: TextInputType.name,
-      expands: false,
+    return TextFormField(
+      controller: textEditingController,
+      keyboardType: TextInputType.phone,
       decoration: InputDecoration(
-        floatingLabelBehavior: FloatingLabelBehavior.always,
-        floatingLabelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
         labelText: labelText,
-        hintText: hintText,
-        labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-        hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.grey2),
+        labelStyle: const TextStyle(color: OColors.grey2),
+        suffixIcon: suffixIcon,
       ),
-      validator: (value) => OFormatter.formatUserName(value),
+      style: const TextStyle(color: OColors.primary),
     );
   }
 }

@@ -1,15 +1,15 @@
 import '../../../../../utils/constants/exports.dart';
 
-class CustomContainerAdress1 extends StatefulWidget {
-   CustomContainerAdress1({Key? key, required this.isChecked,required this.onTap}) : super(key: key);
+class CustomContainerAddress1 extends StatefulWidget {
+   CustomContainerAddress1({Key? key, required this.isChecked,required this.onTap}) : super(key: key);
   bool isChecked = true;
    VoidCallback onTap ;
 
   @override
-  State<CustomContainerAdress1> createState() => _CustomContainerAdress1State();
+  State<CustomContainerAddress1> createState() => _CustomContainerAddress1State();
 }
 
-class _CustomContainerAdress1State extends State<CustomContainerAdress1> {
+class _CustomContainerAddress1State extends State<CustomContainerAddress1> {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -19,7 +19,7 @@ class _CustomContainerAdress1State extends State<CustomContainerAdress1> {
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 10.h),
           decoration: BoxDecoration(
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.white,
                   spreadRadius: 7,
@@ -46,12 +46,12 @@ class _CustomContainerAdress1State extends State<CustomContainerAdress1> {
                   Text("Next to the metro, Maadi 7 St", style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Colors.grey),),
                 ],
               ),
-              Spacer(),
+              const Spacer(),
               Row(
                 children: [
                   Image.asset(OImages.edit),
                   SizedBox(width: OSizes.spaceBtwTexts2),
-                  widget.isChecked ? Image.asset(OImages.delet) :SizedBox(),],)
+                  widget.isChecked ? Image.asset(OImages.delet) :const SizedBox(),],)
             ],
           ),
         ),

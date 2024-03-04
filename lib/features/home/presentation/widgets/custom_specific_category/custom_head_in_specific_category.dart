@@ -1,6 +1,3 @@
-import 'package:osta_app/common/widgets/divider/custom_dots_divider.dart';
-import 'package:osta_app/features/home/presentation/widgets/custom_specific_category/custom_container_in_head.dart';
-
 import '../../../../../utils/constants/exports.dart';
 
 class CustomHeadInSpecificCategory extends StatelessWidget {
@@ -8,21 +5,18 @@ class CustomHeadInSpecificCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Column(
         children: [
           Container(
-            height: 47.h,
+            padding: EdgeInsets.all(OSizes.spaceBtwItems / 1.2),
             width: double.infinity,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.r),
-                color: Color(0xffF3F3F3)),
+                borderRadius: BorderRadius.circular(OSizes.borderRadiusLg),
+                color: const Color(0xffF3F3F3)),
             child: Center(
               child: Text(
-                "What he got with Asta",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineSmall!
-                    .copyWith(color: Color(0xff2370A2)),
+                "What he got with Asta", style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: OColors.blue),
               ),
             ),
           ),
@@ -31,22 +25,22 @@ class CustomHeadInSpecificCategory extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 100.h,
+            height: height / 8.5,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomContainerInHead(
-                    color: Color(0xffFFE9EE),
+                    color: const Color(0xffFFE9EE),
                     image: OImages.completion,
                     title: "completion"),
                 // SizedBox(width: OSizes.spaceBtwTexts2,),
                 CustomContainerInHead(
-                    color: Color(0xffC1FAE6),
+                    color: const Color(0xffC1FAE6),
                     image: OImages.guarantee,
                     title: "quarantee"),
                 // SizedBox(width: OSizes.spaceBtwTexts2,),
                 CustomContainerInHead(
-                    color: Color(0xffFFF1CF),
+                    color: const Color(0xffFFF1CF),
                     image: OImages.quality,
                     title: "Quality"),
               ],

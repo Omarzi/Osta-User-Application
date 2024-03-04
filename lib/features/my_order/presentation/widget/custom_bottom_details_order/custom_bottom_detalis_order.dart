@@ -9,7 +9,7 @@ class CustomBottomDetailsOrder extends StatelessWidget {
       children: [
         Text("Total ",style: Theme.of(context).textTheme.titleLarge),
         Text("(Including value added)",style: Theme.of(context).textTheme.bodySmall!.copyWith(color: OColors.iconCall),),
-        Spacer(),
+        const Spacer(),
         GestureDetector(
           onTap: onTap,
           child: Container(

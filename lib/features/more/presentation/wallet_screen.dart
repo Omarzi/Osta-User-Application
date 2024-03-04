@@ -1,4 +1,3 @@
-
 import '../../../utils/constants/exports.dart';
 
 class WalletScreen extends StatefulWidget {
@@ -15,9 +14,9 @@ class _WalletScreenState extends State<WalletScreen> {
     bool isEnglish = BlocProvider.of<LanguageCubit>(context).isEnglish;
     return Scaffold(
       appBar: OAppBar(
-        title: Text("Wallet",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white),),
+        title: Text("Wallet",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white)),
         centerTitle: true,
-        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white,),
+        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -35,7 +34,7 @@ class _WalletScreenState extends State<WalletScreen> {
                 Text("Your current balance",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
                 /// Make Size
                 SizedBox(height: OSizes.spaceBtwItems),
-                /// Container For Balence
+                /// Container For Balance
                 Container(
                   height: OSizes.imageSize * 1.5,
                   width: width / 2,
@@ -74,7 +73,7 @@ class _WalletScreenState extends State<WalletScreen> {
         // isScrollControlled: true,
         context: context,
         builder: (context) {
-          return CustomBottomSheetForRechargeBalance();
+          return const CustomBottomSheetForRechargeBalance();
         });
   }
 }

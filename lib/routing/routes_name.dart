@@ -30,6 +30,10 @@ class ORoutesName {
   static const String detailsOfMyOrderRoute = " details-of-my-order-route";
   static const String technicalSupportChatRout = " technical-support-route";
 
+  /// Chat Screen
+  static const String chatRoute = " chat-route";
+
+
   /// profile
   static const String modifyPasswordRoute =" modify-password-route";
 
@@ -46,6 +50,7 @@ class ORoutesName {
   static const String submitProposalsRoute = "submit-proposals-route";
   static const String shareTheAppRoute = "share-the-app-route";
   static const String notificationRoute = "notification-route";
+  static const String applicationLanguage = "application-language-route";
 
 
 }

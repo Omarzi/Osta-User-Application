@@ -10,13 +10,13 @@ String title;
 class _CustomButtomSheetInSpecificCategoryState extends State<CustomButtomSheetInSpecificCategory> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 700.h,
       child: Padding(
         padding:  EdgeInsets.only(left: 10.w,right: 10.w,top: 10.h),
         child: Column(
           children: [
-            CustomCloseButton(),
+            const CustomCloseButton(),
             Text(widget.title,
             style: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
             ),

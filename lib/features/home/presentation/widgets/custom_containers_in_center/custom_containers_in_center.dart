@@ -27,11 +27,11 @@ String image;
           children: [
            SizedBox(
              width: 70.w,
-             child: Text("$title",
+             child: Text(title,
              style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: Colors.white,fontSize: 15.sp),
              ),
            ),
-           Spacer(),
+           const Spacer(),
            Image.asset(image),
           ],
         ),

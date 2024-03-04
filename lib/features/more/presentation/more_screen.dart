@@ -12,7 +12,6 @@ class MoreScreen extends StatelessWidget {
         title: SvgPicture.asset(OImages.appIcon, height: 26.h),
         centerTitle: true,
       ),
-
       /// Body
       body: SingleChildScrollView(
         child: Padding(
@@ -23,10 +22,8 @@ class MoreScreen extends StatelessWidget {
             SizedBox(height: OSizes.defaultSpace),
             /// Login Button
             CustomButton(buttonText: "singIn".tr(context), onPressed: () {context.pushNamed(ORoutesName.allDataLoginRoute);}),
-
             /// Make Some Space
             SizedBox(height: OSizes.defaultSpace),
-
             /// ListTile
             ListView.separated(
               shrinkWrap: true,
@@ -42,6 +39,7 @@ class MoreScreen extends StatelessWidget {
                  index == 5 ? context.pushNamed(ORoutesName.submitProposalsRoute):
                  index == 6 ? context.pushNamed(ORoutesName.termsOfUseRoute):
                  index == 8 ? context.pushNamed(ORoutesName.shareTheAppRoute):
+                 index == 9 ? context.pushNamed(ORoutesName.applicationLanguage):
                  index == 10 ? context.pushNamed(ORoutesName.notificationRoute):
                               Container();
 

@@ -6,7 +6,7 @@ class CustomSendText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBetweenIcon,),
+      padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBetweenIcon),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
@@ -17,16 +17,14 @@ class CustomSendText extends StatelessWidget {
                 bottomLeft: Radius.circular(OSizes.cardRadiusLg),
                 topRight: Radius.circular(OSizes.cardRadiusLg),
               ),
-              color: Color(0xFFE8F8FF),
-              border: Border.all(
-                color: OColors.grey,
-              ),
+              color: const Color(0xFFE8F8FF),
+              border: Border.all(color: OColors.grey),
             ),
-            child: Text(text,style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
+            child: Text(text,style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
           ),
           Padding(
-            padding:  EdgeInsets.only(left: OSizes.spaceBtwItems,right: OSizes.spaceBtwItems,top:OSizes.spaceBtwTexts,bottom: OSizes.spaceBtwTexts ),
-            child: Text(time,style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2),),
+            padding:  EdgeInsets.only(left: OSizes.spaceBtwItems,right: OSizes.spaceBtwItems,top:OSizes.spaceBtwTexts,bottom: OSizes.spaceBtwTexts),
+            child: Text(time,style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2)),
           )
 
         ],

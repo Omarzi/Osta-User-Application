@@ -1,6 +1,3 @@
-import 'package:osta_app/common/widgets/text_form_field/custom_text_form_field_.dart';
-import 'package:osta_app/features/chat/presentation/widgets/custom_rating_bar/custom_rating_bar.dart';
-
 import '../../../../../utils/constants/exports.dart';
 
 class CustomBottomSheetToRatingUser extends StatelessWidget {
@@ -38,9 +35,9 @@ class CustomBottomSheetToRatingUser extends StatelessWidget {
 
 
          ],),
-         SizedBox(height: OSizes.spaceBtwItems,),
-         CustomRatingBar(),
-         SizedBox(height: OSizes.spaceBtwItems,),
+         SizedBox(height: OSizes.spaceBtwItems),
+         const CustomRatingBar(),
+         SizedBox(height: OSizes.spaceBtwItems),
          Row(
            children: [
              Text("Your comment to the service provider",
@@ -48,12 +45,9 @@ class CustomBottomSheetToRatingUser extends StatelessWidget {
              ),
            ],
          ),
-         SizedBox(height: OSizes.spaceBtwTexts,),
-         CustomTextFormField(
-             hintText: "Write your comment for the service provider here",
-         controller: controller,
-         ),
-         SizedBox(height: OSizes.spaceBtwItems,),
+         SizedBox(height: OSizes.spaceBtwTexts),
+         CustomTextFormField1(hintText: "Write your comment for the service provider here", controller: controller,maxLines: 7),
+         SizedBox(height: OSizes.spaceBtwItems),
          CustomButton2(text: "Send Now", onTap: (){},
            width: MediaQuery.of(context).size.width/1.2,
            height: MediaQuery.of(context).size.width/8,

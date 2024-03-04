@@ -40,23 +40,21 @@ class _NextBagOfServiceProviderState extends State<NextBagOfServiceProvider> {
         SizedBox(height: OSizes.spaceBtwItems),
         Text("Please enter your bank account details",style: Theme.of(context).textTheme.titleLarge),
         SizedBox(height: OSizes.spaceBtwItems * 2),
-        CustomTextFormFeild3(hintText: "Account Holder's Name", controller: controller,label:
-        Text("Account Holder's Name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),),
+        CustomTextFormField1(hintText: "Account Holder's Name", controller: controller,label:
+        Text("Account Holder's Name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue))),
         SizedBox(height: OSizes.spaceBtwItems),
-        CustomTextFormFeild3(hintText: "account number", controller: controller,label:
-        Text("account number",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),),
+        CustomTextFormField1(hintText: "account number", controller: controller,label:
+        Text("account number",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue))),
         SizedBox(height: OSizes.spaceBtwItems),
-        CustomTextFormFeild3(hintText: "Bank name", controller: controller,label:
-        Text("Bank name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
+        CustomTextFormField1(hintText: "Bank name", controller: controller,label:
+        Text("Bank name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
         ),
         SizedBox(height: OSizes.spaceBtwItems),
-        CustomTextFormFeild3(hintText: "Account number IBAN", controller: controller,label:
-        Text("Account number IBAN",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
+        CustomTextFormField1(hintText: "Account number IBAN", controller: controller,label:
+        Text("Account number IBAN",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
         ),
         SizedBox(height: OSizes.spaceBtwItems),
         CustomButton2(text: "registration", onTap: (){showAlertDialogForReqistration();},height: OSizes.imageSize * 1.3),
-
-
       ],
     );
   }

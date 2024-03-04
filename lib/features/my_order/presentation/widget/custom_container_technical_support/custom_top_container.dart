@@ -1,7 +1,7 @@
 import '../../../../../utils/constants/exports.dart';
 
 class CustomTopContainerInTechnicalSupport extends StatelessWidget {
-   CustomTopContainerInTechnicalSupport({Key? key}) : super(key: key);
+   const CustomTopContainerInTechnicalSupport({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

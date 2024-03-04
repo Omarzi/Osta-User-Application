@@ -1,7 +1,7 @@
 import '../../../../../utils/constants/exports.dart';
 
 class CustomHeadInMarketRequest extends StatefulWidget {
-  CustomHeadInMarketRequest({Key? key}) : super(key: key);
+  const CustomHeadInMarketRequest({Key? key}) : super(key: key);
 
   @override
   State<CustomHeadInMarketRequest> createState() => _CustomHeadInMarketRequestState();
@@ -41,7 +41,6 @@ class _CustomHeadInMarketRequestState extends State<CustomHeadInMarketRequest> {
                     child:  Text("The ending",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: isPressed ? OColors.black :OColors.textInMyOrder1 ))),
               ),
             ),
-
           ],
         ),
         const Divider(thickness: 1,)

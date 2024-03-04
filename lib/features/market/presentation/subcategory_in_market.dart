@@ -1,5 +1,4 @@
 import '../../../utils/constants/exports.dart';
-import '../../my_order/presentation/widget/custom_head_in_market_requests/custom_head_in_market_requests.dart';
 
 class SubCategoryInMarket extends StatefulWidget {
   SubCategoryInMarket({Key? key, required this.title}) : super(key: key);
@@ -10,6 +9,8 @@ class SubCategoryInMarket extends StatefulWidget {
 }
 
 class _SubCategoryInMarketState extends State<SubCategoryInMarket> {
+  TextEditingController controller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +41,7 @@ class _SubCategoryInMarketState extends State<SubCategoryInMarket> {
           padding: EdgeInsets.only(top: OSizes.spaceBtwTexts2, left: OSizes.spaceBtwTexts, right: OSizes.spaceBtwTexts),
           child: Column(
             children: [
-              const CustomSearchBar(),
+              CustomTextFormFieldSearch(controller: controller,hintText: "Search for product, dealer name",suffixIcon: const Icon(Icons.search),suffixIconColor: OColors.textInMyOrder1),
               SizedBox(height: OSizes.spaceBtwItems),
                CustomHeadInMarket(onTap1: (){showBottomSheetInFilter();}, onTap2: (){showBottomSheetInRanking();}),
               SizedBox(height: OSizes.spaceBtwItems),

@@ -24,17 +24,18 @@ class _CustomDataInElctronicWalletState extends State<CustomDataInElctronicWalle
         child: Column(
           children: [
             /// Phone Number
-            TextFormField(
-              controller: phoneController,
-              keyboardType: TextInputType.phone,
-              decoration: InputDecoration(
-                labelText: 'phoneNumber'.tr(context),
-                labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
-                prefixIcon: CustomPopupMenu(textWidget: Text(selectedCountryCode.toString()), onSelected: (String value) => setState(() => selectedCountryCode = value)),
-              ),
-              validator: (value) => OFormatter.formatPhoneNumber(value, selectedCountryCode),
-            ),
+            CustomPhoneTextFormField(hintText: "100000000"),
+            // TextFormField(
+            //   controller: phoneController,
+            //   keyboardType: TextInputType.phone,
+            //   decoration: InputDecoration(
+            //     labelText: 'phoneNumber'.tr(context),
+            //     labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
+            //     hintStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),
+            //     prefixIcon: CustomPopupMenu(textWidget: Text(selectedCountryCode.toString()), onSelected: (String value) => setState(() => selectedCountryCode = value)),
+            //   ),
+            //   validator: (value) => OFormatter.formatPhoneNumber(value, selectedCountryCode),
+            // ),
 
             /// Make Some Space
            SizedBox(height: 10.h,),

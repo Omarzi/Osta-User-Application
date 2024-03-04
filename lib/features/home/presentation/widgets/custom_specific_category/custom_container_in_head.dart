@@ -1,4 +1,3 @@
-
 import 'package:osta_app/utils/constants/exports.dart';
 
 class CustomContainerInHead extends StatelessWidget {
@@ -11,22 +10,20 @@ String title;
     return Expanded(
         child: Container(
           margin: EdgeInsets.only(left: OSizes.spaceBtwTexts , right: OSizes.spaceBtwTexts),
-          padding: EdgeInsets.symmetric(vertical: 7.h),
+          padding: EdgeInsets.symmetric(vertical: OSizes.spaceBtwTexts2),
         decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8.r),
+              borderRadius: BorderRadius.circular(OSizes.borderRadiusLg),
               color: color,
             ),
           child:  Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(image),
               SizedBox(height: OSizes.spaceBtwTexts,),
-
               Text(title,style: Theme.of(context).textTheme.titleMedium,)
             ],
           ),
         )
     );
-
 
 
   //   return Container(

@@ -1,8 +1,7 @@
-
 import '../../../../../utils/constants/exports.dart';
 
 class CustomTimeInBottomSheet extends StatefulWidget {
-   CustomTimeInBottomSheet({Key? key}) : super(key: key);
+   const CustomTimeInBottomSheet({Key? key}) : super(key: key);
 
   @override
   State<CustomTimeInBottomSheet> createState() => _CustomTimeInBottomSheetState();
@@ -27,7 +26,7 @@ class _CustomTimeInBottomSheetState extends State<CustomTimeInBottomSheet> {
     );
   }
   Widget hourMinute12H() {
-    return new TimePickerSpinner(
+    return TimePickerSpinner(
       highlightedTextStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.primary),
       normalTextStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2),
       spacing: 1,

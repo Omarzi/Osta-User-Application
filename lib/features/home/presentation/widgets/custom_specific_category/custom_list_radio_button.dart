@@ -1,8 +1,7 @@
-
 import '../../../../../utils/constants/exports.dart';
 
 class CustomListRadioButton extends StatefulWidget {
-  CustomListRadioButton({Key? key}) : super(key: key);
+  const CustomListRadioButton({Key? key}) : super(key: key);
 
   @override
   State<CustomListRadioButton> createState() => _CustomListRadioButtonState();

@@ -1,7 +1,7 @@
 import '../../../utils/constants/exports.dart';
 
 class AddNewAddressScreen extends StatefulWidget {
-   AddNewAddressScreen({Key? key}) : super(key: key);
+   const AddNewAddressScreen({Key? key}) : super(key: key);
 
   @override
   State<AddNewAddressScreen> createState() => _AddNewAddressScreenState();
@@ -10,7 +10,6 @@ class AddNewAddressScreen extends StatefulWidget {
 class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
   TextEditingController controller = TextEditingController();
   String selectedCountryCode = '+20';
-
   @override
   Widget build(BuildContext context) {
     bool isEnglish = BlocProvider.of<LanguageCubit>(context).isEnglish;
@@ -18,9 +17,9 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
 
     return Scaffold(
       appBar: OAppBar(
-        title: Text("Add new address",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white),),
+        title: Text("Add new address",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white)),
         centerTitle: true,
-        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white,),
+        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -28,26 +27,26 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
           child: Column(
             children: [
               /// Search
-              CustomTextFormFeild3(hintText: "Type the address", controller: controller, suffixIcon: Icons.search,suffixIconColor: OColors.blue),
+              CustomTextFormField1(hintText: "Type the address", controller: controller, suffixIcon: Icons.search,suffixIconColor: OColors.blue),
               /// Map
               SizedBox(height: OSizes.imageSize * 5),
               ///Form Data
               Form(
                 child: Column(
                   children: [
-                    CustomTextFormFeild3(hintText: "the job", controller: controller,
+                    CustomTextFormField1(hintText: "the job", controller: controller,
                     label: SizedBox(
                     width: width / 4,
                     child: Row(
                       children: [
-                        Text("Title name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
+                        Text("Title name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
                         SizedBox(width: OSizes.spaceBtwTexts2),
-                        Text("*",style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: OColors.warning3),),
+                        Text("*",style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: OColors.warning3)),
                       ],
                     ),
                   ),),
                     SizedBox(height: OSizes.spaceBtwItems),
-                    CustomTextFormFeild3(hintText: "Egypt", controller: controller,
+                    CustomTextFormField1(hintText: "Egypt", controller: controller,
                       label: SizedBox(
                         width: width / 4,
                         child: Row(
@@ -65,7 +64,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                       },
                     ),
                     SizedBox(height: OSizes.spaceBtwItems),
-                    CustomTextFormFeild3(hintText: "Cairo", controller: controller,
+                    CustomTextFormField1(hintText: "Cairo", controller: controller,
                       label: SizedBox(
                         width: width / 3.5,
                         child: Row(
@@ -83,7 +82,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                       },
                     ),
                     SizedBox(height: OSizes.spaceBtwItems),
-                    CustomTextFormFeild3(hintText: "Maadi", controller: controller,
+                    CustomTextFormField1(hintText: "Maadi", controller: controller,
                       label: SizedBox(
                         width: width / 4.4,
                         child: Row(
@@ -101,7 +100,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                       },
                     ),
                     SizedBox(height: OSizes.spaceBtwItems),
-                    CustomTextFormFeild3(hintText: "Next to the metro, 7th street", controller: controller,
+                    CustomTextFormField1(hintText: "Next to the metro, 7th street", controller: controller,
                       label: SizedBox(
                         width: width / 4.4,
                         child: Row(
@@ -117,7 +116,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                     Row(
                       children: [
                         Expanded(
-                          child: CustomTextFormFeild3(hintText: "12", controller: controller,
+                          child: CustomTextFormField1(hintText: "12", controller: controller,
                             label: SizedBox(
                               width: width / 2.8,
                               child: Row(
@@ -132,7 +131,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                         ),
                         SizedBox(width: OSizes.spaceBtwItems),
                         Expanded(
-                          child: CustomTextFormFeild3(hintText: "5", controller: controller,
+                          child: CustomTextFormField1(hintText: "5", controller: controller,
                             label: SizedBox(
                               width: width / 4,
                               child: Row(
@@ -148,7 +147,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                       ],
                     ),
                     SizedBox(height: OSizes.spaceBtwItems),
-                    CustomTextFormFeild3(hintText: "Beside KFC Restaurant", controller: controller,
+                    CustomTextFormField1(hintText: "Beside KFC Restaurant", controller: controller,
                       label: SizedBox(
                         width: width / 3.5,
                         child: Row(
@@ -161,9 +160,11 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                   ],
                 )
               ),
-              SizedBox(height: OSizes.spaceBtwItems,),
+              /// Make Size
+              SizedBox(height: OSizes.spaceBtwItems),
               /// Button
-              CustomButton2(onTap: (){},text: "Save",height: OSizes.imageSize * 1.3),
+              CustomButton2(onTap: (){
+              },text: "Save",height: OSizes.imageSize * 1.3),
             ],
           ),
         ),

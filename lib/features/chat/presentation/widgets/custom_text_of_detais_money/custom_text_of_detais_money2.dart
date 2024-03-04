@@ -13,7 +13,7 @@ class CustomTextOfDetailsMoney2 extends StatelessWidget {
             Text("(Including tax added)",style: Theme.of(context).textTheme.bodySmall!.copyWith(color: OColors.iconCall),),
           ],
         ),
-        Spacer(),
+        const Spacer(),
         Text(price,style: Theme.of(context).textTheme.titleLarge,),
       ],
     );

@@ -1,4 +1,3 @@
-import 'package:osta_app/features/chat/presentation/widgets/custom_pinput/custom_pinput.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomBottomSheetInElectronicWallet extends StatefulWidget {
@@ -15,7 +14,7 @@ class _CustomBottomSheetInElectronicWalletState extends State<CustomBottomSheetI
       padding:  EdgeInsets.only(top: OSizes.spaceBtwItems,left: OSizes.padding,right: OSizes.padding),
       child: Column(
         children: [
-           Row(mainAxisAlignment: MainAxisAlignment.end,
+           const Row(mainAxisAlignment: MainAxisAlignment.end,
              children: [
                CustomCloseButton()
              ],
@@ -27,9 +26,9 @@ class _CustomBottomSheetInElectronicWalletState extends State<CustomBottomSheetI
           Text("Enter the code sent to your mobile phone",
           style: Theme.of(context).textTheme.titleMedium,
           ),
-          SizedBox(height: OSizes.spaceBtwItems * 2,),
-          CustomPinPut(),
-          SizedBox(height: OSizes.spaceBtwItems,),
+          SizedBox(height: OSizes.spaceBtwItems * 2),
+          const CustomPinPut(),
+          SizedBox(height: OSizes.spaceBtwItems),
           CustomButton2(text: "Sure", onTap: (){
             context.pop();
             showAlertDialogForElectronicWallet();

@@ -1,4 +1,3 @@
-import 'package:osta_app/common/widgets/button/custom_button_with_border_grey.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomContainerConfirmation2 extends StatelessWidget {
@@ -31,10 +30,10 @@ class CustomContainerConfirmation2 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(text),
-                SizedBox(height: OSizes.spaceBtwTexts2,),
+                SizedBox(height: OSizes.spaceBtwTexts2),
                 Row(
                   children: [
-                    CustomButton2(text: textButton, onTap: onTap,width: 150.w,height: 45.h,),
+                    CustomButton2(text: textButton, onTap: onTap,width: 150.w,height: 45.h),
                   ],
                 )
               ],
@@ -42,7 +41,7 @@ class CustomContainerConfirmation2 extends StatelessWidget {
           ),
           Padding(
             padding:  EdgeInsets.only(left: OSizes.spaceBtwItems,right: OSizes.spaceBtwItems,top:OSizes.spaceBtwTexts,bottom: OSizes.spaceBtwTexts ),
-            child: Text("4:30PM",style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2),),
+            child: Text("4:30PM",style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2)),
           )
         ],
       ),

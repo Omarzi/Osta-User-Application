@@ -1,7 +1,7 @@
 import '../../../utils/constants/exports.dart';
 
 class CustomButton3 extends StatelessWidget {
-  CustomButton3({super.key, required this.text,this.height,this.width,required this.onTap,required this.color1,required this.color2});
+  CustomButton3({super.key, required this.text,this.height,this.width,required this.onTap,required this.color1,required this.color2, this.colorTextButton});
 
   final String text;
   double? height=50.h;
@@ -9,6 +9,7 @@ class CustomButton3 extends StatelessWidget {
   VoidCallback onTap;
   Color color1;
   Color color2;
+  Color? colorTextButton = OColors.white;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class CustomButton3 extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .titleMedium!
-                  .copyWith(color: OColors.white, height: .5.h),
+                  .copyWith(color: colorTextButton, height: .5.h),
             ),
           )
       ),

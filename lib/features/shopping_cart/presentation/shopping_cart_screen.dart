@@ -1,4 +1,3 @@
-
 import '../../../utils/constants/exports.dart';
 
 class ShoppingCartScreen extends StatelessWidget {
@@ -30,7 +29,7 @@ class ShoppingCartScreen extends StatelessWidget {
                ),
              ),
               const CustomDiscountCode(),
-              CustomContainerInBottomShoppingCart(),
+              const CustomContainerInBottomShoppingCart(),
               SizedBox(height: OSizes.spaceBtwItems),
               CustomButton2(text: "Confirmation", onTap: (){
                 Navigator.pushNamed(context, ORoutesName.oderConfirmationRoute);

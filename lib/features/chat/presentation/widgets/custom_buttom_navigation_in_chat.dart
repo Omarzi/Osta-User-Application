@@ -1,10 +1,11 @@
 import '../../../../utils/constants/exports.dart';
 
 class CustomButtomNavigationInChat extends StatelessWidget {
-   CustomButtomNavigationInChat({Key? key}) : super(key: key);
-  @override
+    CustomButtomNavigationInChat({Key? key}) : super(key: key);
+    TextEditingController controller = TextEditingController();
+
+   @override
   Widget build(BuildContext context) {
-    TextEditingController controller=TextEditingController();
 
     return Container(
       padding: EdgeInsets.all(OSizes.spaceBetweenIcon),
@@ -14,61 +15,22 @@ class CustomButtomNavigationInChat extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: Container(
-              child: TextFormField(
+            child: CustomTextFormFieldSearch(
                 controller: controller,
-                decoration: InputDecoration(
-                  fillColor: OColors.textForm,
-                  filled: true,
-                  label: Row(
-                    children: [
-                      Text("....write here",style:TextStyle(color: OColors.grey2),),
-                      Spacer(),
-                      Image.asset(OImages.happiness),
-                      SizedBox(width: OSizes.spaceBtwTexts,),
-                      Image.asset(OImages.camera),
-                    ],
-                  ),
-                  hintStyle: TextStyle(color: OColors.grey2),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                          color: OColors.textForm
-                      )
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                          color: OColors.textForm
-                      )
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                          color: OColors.textForm
-                      )
-                  ),
-                  errorBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                          color: OColors.textForm
-                      )
-                  ),
-                  disabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                    borderSide: BorderSide(
-                      color: OColors.textForm
-                    )
-                  ),
-
-                ),
+                hintText: "... Write here",suffixIcon: SizedBox(
+                  width: 70.w,
+              child: Row(
+                children: [
+                  Image.asset(OImages.happiness),
+                  SizedBox(width: OSizes.spaceBtwTexts),
+                  Image.asset(OImages.camera),
+                ],
               ),
-            ),
+            ),suffixIconColor: OColors.textInMyOrder1),
           ),
-          SizedBox(width: OSizes.spaceBtwTexts,),
+          SizedBox(width: OSizes.spaceBtwTexts),
           GestureDetector(
-              onTap: (){
-              },
+              onTap: (){},
               child: Container(
                 height: 50.h,
                width: 50.w,
@@ -77,14 +39,12 @@ class CustomButtomNavigationInChat extends StatelessWidget {
                  color: OColors.iconCall,
                ),
                 child: Center(
-                  child: Icon(controller.text.isNotEmpty? Icons.send:Icons.mic,color: OColors.white,size: 20.sp,),
+                  child: Icon(controller.text.isNotEmpty ? Icons.send : Icons.mic,color: OColors.white,size: 20.sp),
                 ),
               )
           ),
         ],
-
       ),
     );
   }
-
 }

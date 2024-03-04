@@ -1,10 +1,8 @@
 import 'package:osta_app/features/chat/presentation/widgets/custom_pinput/custom_pinput.dart';
-import 'package:osta_app/features/chat/presentation/widgets/custom_radio_button_in_chat/custom_text_form_field_in_chat/custom_data_in_electronic_wallet.dart';
-import 'package:osta_app/features/more/presentation/widgets/custom_bottom_sheet/custom_bottom_sheet_for_recharge_balance2.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomBottomSheetForElectronicWallet2 extends StatefulWidget {
-  CustomBottomSheetForElectronicWallet2({Key? key}) : super(key: key);
+  const CustomBottomSheetForElectronicWallet2({Key? key}) : super(key: key);
 
   @override
   State<CustomBottomSheetForElectronicWallet2> createState() =>
@@ -19,26 +17,26 @@ class _CustomBottomSheetForElectronicWalletState
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    return Container(
+    return SizedBox(
       height: height / 2.5,
       child: Padding(
         padding: EdgeInsets.symmetric(
             horizontal: OSizes.spaceBtwItems, vertical: OSizes.spaceBtwTexts2),
         child: Column(
           children: [
-            CustomCloseButton(),
+            const CustomCloseButton(),
             Text("Electronic wallets",
                 style: Theme.of(context)
                     .textTheme
                     .titleLarge!
                     .copyWith(color: OColors.blue)),
             SizedBox(height: OSizes.spaceBtwTexts2),
-            Text("Enter the code sent to your mobile phone"),
+            const Text("Enter the code sent to your mobile phone"),
             SizedBox(height: OSizes.spaceBtwTexts2),
-            CustomPinPut(),
-            Spacer(),
+            const CustomPinPut(),
+            const Spacer(),
             CustomButton2(
-                text: "Confirmtion",
+                text: "Confirmation",
                 onTap: () {
                   context.pop();
                   showAlertDialogForElectronicWallet();

@@ -1,4 +1,3 @@
-
 import '../../../utils/constants/exports.dart';
 
 class NotificationScreen extends StatelessWidget {
@@ -18,19 +17,17 @@ class NotificationScreen extends StatelessWidget {
           padding: EdgeInsets.all(OSizes.spaceBtwItems),
           child: Column(
             children: [
-              const CustomContainerInNotifiction(),
+              const CustomContainerInNotification(),
               SizedBox(height: OSizes.spaceBtwItems),
-              const CustomContainerInNotifiction(),
+              const CustomContainerInNotification(),
               SizedBox(height: OSizes.spaceBtwItems),
-              const CustomContainerInNotifiction2(),
+              const CustomContainerInNotification2(),
               SizedBox(height: OSizes.spaceBtwItems),
-              const CustomContainerInNotifiction2(),
+              const CustomContainerInNotification2(),
               SizedBox(height: OSizes.spaceBtwItems),
-              const CustomContainerInNotifiction2(),
+              const CustomContainerInNotification2(),
               SizedBox(height: OSizes.spaceBtwItems),
-              const CustomContainerInNotifiction2(),
-
-
+              const CustomContainerInNotification2(),
             ],
           ),
         ),

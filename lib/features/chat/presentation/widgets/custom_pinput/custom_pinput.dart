@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:osta_app/utils/constants/colors.dart';
 import 'package:osta_app/utils/constants/exports.dart';
-import 'package:pinput/pinput.dart';
+
 class CustomPinPut extends StatefulWidget {
   const CustomPinPut({Key? key}) : super(key: key);
 

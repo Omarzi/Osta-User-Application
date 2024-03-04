@@ -27,7 +27,7 @@ class _CustomBottomInSpecificCategoryState extends State<CustomBottomInSpecificC
               height: 50.h,
               width: 270.w,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: [Color(0xFF2E648C), Color(0xFF49AFD4)],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
@@ -50,7 +50,7 @@ class _CustomBottomInSpecificCategoryState extends State<CustomBottomInSpecificC
                 width: 50,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
-                  color: Color(0xffFEC000),
+                  color: const Color(0xffFEC000),
                 ),
                 child: Center(
                   child: Image.asset(OImages.appointment),

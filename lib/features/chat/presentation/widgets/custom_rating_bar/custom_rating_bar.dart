@@ -26,7 +26,7 @@ class _CustomRatingBarState extends State<CustomRatingBar> {
             allowHalfRating: true,
             itemCount: 5,
             ratingWidget: RatingWidget(
-                full: const Icon(Icons.star, color: OColors.gold,),
+                full: const Icon(Icons.star, color: OColors.gold),
                 half: const Icon(
                   Icons.star_half,
                   color: OColors.gold,

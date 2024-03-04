@@ -6,7 +6,7 @@ class CustomContainerSendMessageDescriptionOfTheProblem extends StatelessWidget 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBetweenIcon,),
+      padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBetweenIcon),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -20,7 +20,7 @@ class CustomContainerSendMessageDescriptionOfTheProblem extends StatelessWidget 
                 bottomLeft: Radius.circular(OSizes.cardRadiusLg),
                 topRight: Radius.circular(OSizes.cardRadiusLg),
               ),
-              color: Color(0xFFE8F8FF),
+              color: const Color(0xFFE8F8FF),
               border: Border.all(
                 color: OColors.grey,
               ),
@@ -28,12 +28,12 @@ class CustomContainerSendMessageDescriptionOfTheProblem extends StatelessWidget 
             ),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Description of the problem",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
-                SizedBox(height: OSizes.spaceBtwTexts,),
+                Text("Description of the problem",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
+                SizedBox(height: OSizes.spaceBtwTexts),
                 Text("Lorem Ipsum is a method of writing texts in Graphic design is commonly used",
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: OColors.grey2),
                 ),
-                SizedBox(height: OSizes.spaceBtwItems,),
+                SizedBox(height: OSizes.spaceBtwItems),
                 Row(
                   children: [
                     Container(
@@ -46,7 +46,7 @@ class CustomContainerSendMessageDescriptionOfTheProblem extends StatelessWidget 
                       child: Image.asset(OImages.zoomIn),
           
                     ),
-                    SizedBox(width: OSizes.spaceBtwItems,),
+                    SizedBox(width: OSizes.spaceBtwItems),
                     Container(
                       height: 55.h,
                       width: 55.w,
@@ -57,7 +57,7 @@ class CustomContainerSendMessageDescriptionOfTheProblem extends StatelessWidget 
                       child: Image.asset(OImages.zoomIn),
           
                     ),
-                    SizedBox(width: OSizes.spaceBtwItems,),
+                    SizedBox(width: OSizes.spaceBtwItems),
                     Container(
                       height: 55.h,
                       width: 55.w,
@@ -70,23 +70,23 @@ class CustomContainerSendMessageDescriptionOfTheProblem extends StatelessWidget 
                     ),
                   ],
                 ),
-                SizedBox(height: OSizes.spaceBtwTexts,),
-                Text("The Address",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
-                SizedBox(height: OSizes.spaceBtwTexts,),
-                Text("Home", style: Theme.of(context).textTheme.bodyMedium,),
-                SizedBox(height: OSizes.spaceBtwTexts,),
-                Text("Next to the metro, Maadi 7 St", style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: OColors.grey2),),
-                SizedBox(height: OSizes.spaceBtwTexts,),
-                Text("payment method", style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
-                SizedBox(height: OSizes.spaceBtwTexts,),
-                Text("cash", style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: OColors.grey2),),
+                SizedBox(height: OSizes.spaceBtwTexts),
+                Text("The Address",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
+                SizedBox(height: OSizes.spaceBtwTexts),
+                Text("Home", style: Theme.of(context).textTheme.bodyMedium),
+                SizedBox(height: OSizes.spaceBtwTexts),
+                Text("Next to the metro, Maadi 7 St", style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: OColors.grey2)),
+                SizedBox(height: OSizes.spaceBtwTexts),
+                Text("payment method", style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
+                SizedBox(height: OSizes.spaceBtwTexts),
+                Text("cash", style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: OColors.grey2)),
           
               ],
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(left: OSizes.spaceBtwItems,right: OSizes.spaceBtwItems,top:OSizes.spaceBtwTexts,bottom: OSizes.spaceBtwTexts ),
-            child: Text("4:30PM",style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2),),
+            padding:  EdgeInsets.only(left: OSizes.spaceBtwItems,right: OSizes.spaceBtwItems,top:OSizes.spaceBtwTexts,bottom: OSizes.spaceBtwTexts),
+            child: Text("4:30PM",style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: OColors.grey2)),
           )
         ],
       ),

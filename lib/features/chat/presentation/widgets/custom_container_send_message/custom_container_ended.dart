@@ -8,7 +8,7 @@ class CustomContainerEnded extends StatelessWidget {
     return Card(
       // elevation: 5.sp,
       child: Padding(
-        padding:  EdgeInsets.only(bottom: 0),
+        padding:  const EdgeInsets.only(bottom: 0),
         child: Container(
           padding: EdgeInsets.all(OSizes.spaceBtwItems),
           height: 80.h,
@@ -22,11 +22,11 @@ class CustomContainerEnded extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Text("Total amount "),
-              Text("(Including tax added)",
+              const Text("Total amount "),
+              const Text("(Including tax added)",
               style: TextStyle(color: OColors.iconCall),
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 height: 30.h,
                 width: 90.w,
@@ -34,7 +34,7 @@ class CustomContainerEnded extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50.r),
                   color: OColors.bgCall
                 ),
-                child: Center(
+                child: const Center(
                   child: Text("125 pounds",
                   style: TextStyle(color: OColors.iconCall),
                   ),

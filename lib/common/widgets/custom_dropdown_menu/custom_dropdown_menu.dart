@@ -21,12 +21,12 @@ class _CustomDropdownMenuState extends State<CustomDropdownMenu> {
           controller: selectedController,
           enableFilter: true,
           requestFocusOnTap: true,
-          trailingIcon: Icon(Icons.keyboard_arrow_down,size: 30.sp,color:widget.trailingIconColor),
+          // trailingIcon: Icon(Icons.keyboard_arrow_down,size: 30.sp,color:widget.trailingIconColor),
          label: widget.label,
-          inputDecorationTheme: const InputDecorationTheme(
-            filled: true,
-            contentPadding: EdgeInsets.symmetric(vertical: 5.0),
-          ),
+          // inputDecorationTheme: const InputDecorationTheme(
+          //   filled: true,
+          //   contentPadding: EdgeInsets.symmetric(vertical: 5.0),
+          // ),
           onSelected: (SelectedItem? item) {
             setState(() {
               selectedItem = item ;

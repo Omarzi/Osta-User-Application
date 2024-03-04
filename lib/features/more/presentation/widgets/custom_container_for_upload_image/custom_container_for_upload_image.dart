@@ -12,7 +12,7 @@ class CustomContainerForUploadImage extends StatelessWidget {
           color: OColors.iconCall,
           borderType: BorderType.RRect,
           radius:  Radius.circular(OSizes.borderRadiusLg),
-          padding:  EdgeInsets.all(0),
+          padding:  const EdgeInsets.all(0),
           child: ClipRRect(
               borderRadius: const BorderRadius.all(Radius.circular(12)),
               child: Container(

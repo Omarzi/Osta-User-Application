@@ -12,8 +12,6 @@ class CustomSpecificRadioButton extends StatefulWidget {
 class _CustomSpecificRadioButtonState extends State<CustomSpecificRadioButton> {
   int selectedOption = 1;
 
-
-
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -26,7 +24,7 @@ class _CustomSpecificRadioButtonState extends State<CustomSpecificRadioButton> {
           Expanded(
             child: ListTile(
               title: Text(
-                "${widget.title}",
+                widget.title,
                 style: Theme.of(context)
                     .textTheme
                     .bodyMedium!
@@ -44,7 +42,7 @@ class _CustomSpecificRadioButtonState extends State<CustomSpecificRadioButton> {
               ),
             ),
           ),
-          Text("${widget.offer}"),
+          Text(widget.offer),
         ],
       ),
     );

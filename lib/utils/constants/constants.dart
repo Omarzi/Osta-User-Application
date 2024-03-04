@@ -53,6 +53,11 @@ class OConstants {
     "50 EGB",
   ];
 
+  static  List<String> applicationLanguage=[
+    "Arabic Language",
+    "English Language",
+  ];
+
   static List<String> imgeCategoryMarket = [
     OImages.categoryMarket1,
     OImages.categoryMarket2,

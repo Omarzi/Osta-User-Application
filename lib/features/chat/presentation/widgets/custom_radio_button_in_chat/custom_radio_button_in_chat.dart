@@ -2,7 +2,7 @@ import 'package:osta_app/features/chat/presentation/widgets/custom_radio_button_
 import '../../../../../utils/constants/exports.dart';
 
 class CustomRadioButtonInChat extends StatefulWidget {
-  CustomRadioButtonInChat({Key? key}) : super(key: key);
+  const CustomRadioButtonInChat({Key? key}) : super(key: key);
 
   @override
   State<CustomRadioButtonInChat> createState() =>
@@ -29,7 +29,6 @@ class _CustomRadioButtonInChatState extends State<CustomRadioButtonInChat> {
               onChanged: (value) {
                 setState(() {
                   selectedOption =value!;
-                  print(selectedOption);
                 });
               },
             ),
@@ -72,7 +71,7 @@ class _CustomRadioButtonInChatState extends State<CustomRadioButtonInChat> {
             text: "Credit cards",
             image: OImages.iconCard,
           ),
-          selectedOption==3?CustomDataInCreditCard():SizedBox(),
+          selectedOption==3?CustomDataInCreditCard():const SizedBox(),
           CustomSpecificRadioButtonInChat(
             listTile: ListTile(
               leading: Radio(
@@ -82,7 +81,6 @@ class _CustomRadioButtonInChatState extends State<CustomRadioButtonInChat> {
                 onChanged: (value) {
                   setState(() {
                     selectedOption =value!;
-                    print(selectedOption);
                   });
                 },
               ),
@@ -90,7 +88,7 @@ class _CustomRadioButtonInChatState extends State<CustomRadioButtonInChat> {
             text: "Electronic wallets",
             image: OImages.iconMobile,
           ),
-          selectedOption==4?CustomDataInElctronicWallet():SizedBox(),
+          selectedOption==4?CustomDataInElctronicWallet():const SizedBox(),
           CustomSpecificRadioButtonInChat(
             listTile: ListTile(
               leading: Radio(
@@ -100,7 +98,6 @@ class _CustomRadioButtonInChatState extends State<CustomRadioButtonInChat> {
                 onChanged: (value) {
                   setState(() {
                     selectedOption =value!;
-                    print(selectedOption);
                   });
                 },
               ),

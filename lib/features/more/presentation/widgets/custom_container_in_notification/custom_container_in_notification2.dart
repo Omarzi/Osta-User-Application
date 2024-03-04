@@ -1,7 +1,7 @@
 import '../../../../../utils/constants/exports.dart';
 
-class CustomContainerInNotifiction2 extends StatelessWidget {
-  const CustomContainerInNotifiction2({Key? key}) : super(key: key);
+class CustomContainerInNotification2 extends StatelessWidget {
+  const CustomContainerInNotification2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class CustomContainerInNotifiction2 extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     CustomCloseButton2(),

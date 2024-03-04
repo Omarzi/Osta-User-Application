@@ -8,7 +8,7 @@ class CustomTextOfDetailsMoney extends StatelessWidget {
     return Row(
       children: [
         Text(type,style: Theme.of(context).textTheme.titleSmall,),
-        Spacer(),
+        const Spacer(),
         Text(price,style: Theme.of(context).textTheme.titleSmall,),
       ],
     );

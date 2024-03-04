@@ -9,17 +9,10 @@ class CustomContainerHappyOrSad extends StatelessWidget {
       child: Container(
         height: OSizes.imageSize * 1.5,
         width: OSizes.space * 2.5,
-        decoration: BoxDecoration(
-            color: OColors.white,
-            borderRadius: BorderRadius.circular(OSizes.borderRadiusLg),
-            border: Border.all(
-              color: OColors.grey,
-              width: 0.5,
-
-            )
+        decoration: BoxDecoration(color: OColors.white, borderRadius: BorderRadius.circular(OSizes.borderRadiusLg),
+            border: Border.all(color: OColors.grey, width: 0.5)
         ),
-        child: Center(
-          child: Image.asset(image),
+        child: Center(child: Image.asset(image),
         ),
       ),
     );

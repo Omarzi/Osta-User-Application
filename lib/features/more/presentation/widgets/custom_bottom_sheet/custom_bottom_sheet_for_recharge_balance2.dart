@@ -1,9 +1,7 @@
-import 'package:osta_app/features/more/presentation/widgets/custom_bottom_sheet/custom_bottom_sheet_for_credit_card.dart';
-import 'package:osta_app/features/more/presentation/widgets/custom_bottom_sheet/custom_bottom_sheet_for_elctronic_wallet.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomBottomSheetForRechargeBalance2 extends StatefulWidget {
-  CustomBottomSheetForRechargeBalance2({Key? key}) : super(key: key);
+  const CustomBottomSheetForRechargeBalance2({Key? key}) : super(key: key);
 
   @override
   State<CustomBottomSheetForRechargeBalance2> createState() => _CustomBottomSheetForRechargeBalance2State();
@@ -17,16 +15,16 @@ class _CustomBottomSheetForRechargeBalance2State extends State<CustomBottomSheet
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    return Container(
+    return SizedBox(
       height: height / 2.6,
       child: Padding(
         padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBtwItems,vertical: OSizes.spaceBtwTexts2),
         child: Column(
           children: [
-            CustomCloseButton(),
+            const CustomCloseButton(),
             Text("Recharge the balance",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
             SizedBox(height: OSizes.spaceBtwTexts2),
-            Text("Choose payment method"),
+            const Text("Choose payment method"),
             SizedBox(height: OSizes.spaceBtwTexts2),
             CustomSpecificRadioButtonInChat(
               listTile: ListTile(
@@ -61,8 +59,8 @@ class _CustomBottomSheetForRechargeBalance2State extends State<CustomBottomSheet
               text: "Electronic wallets",
               image: OImages.iconMobile,
             ),
-            Spacer(),
-            CustomButton2(text: "Confirmtion", onTap: (){
+            const Spacer(),
+            CustomButton2(text: "Confirmation", onTap: (){
               context.pop();
            selectedOption == 1? showBottomSheetForCreditCard():selectedOption == 2? showBottomSheetForElectronicWallet():context.pop();
             },height: OSizes.imageSize * 1.4,width: width)
@@ -81,7 +79,7 @@ class _CustomBottomSheetForRechargeBalance2State extends State<CustomBottomSheet
         // isScrollControlled: true,
         context: context,
         builder: (context) {
-          return CustomBottomSheetForCreditCard();
+          return const CustomBottomSheetForCreditCard();
         });
   }
   void showBottomSheetForElectronicWallet() {
@@ -94,7 +92,7 @@ class _CustomBottomSheetForRechargeBalance2State extends State<CustomBottomSheet
         // isScrollControlled: true,
         context: context,
         builder: (context) {
-          return CustomBottomSheetForElectronicWallet2();
+          return const CustomBottomSheetForElectronicWallet2();
         });
   }
 

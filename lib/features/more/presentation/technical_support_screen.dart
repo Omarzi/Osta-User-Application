@@ -8,7 +8,7 @@ class TechnicalSupportScreen extends StatelessWidget {
     bool isEnglish = BlocProvider.of<LanguageCubit>(context).isEnglish;
     return Scaffold(
       appBar: OAppBar(
-        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white,),
+        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white),
         title: Text("Technical Support ", style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: OColors.white)),
         centerTitle: true,
       ),

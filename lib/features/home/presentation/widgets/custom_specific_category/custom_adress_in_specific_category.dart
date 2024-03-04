@@ -11,7 +11,7 @@ bool isChecked = true;
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 10.h),
         decoration: BoxDecoration(
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.white,
               spreadRadius: 7,
@@ -45,8 +45,8 @@ bool isChecked = true;
                 ),
               ],
             ),
-            Spacer(),
-          isChecked ? Image.asset(OImages.write) :SizedBox(),
+            const Spacer(),
+          isChecked ? Image.asset(OImages.write) :const SizedBox(),
           ],
         ),
       ),

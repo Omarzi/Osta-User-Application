@@ -73,7 +73,6 @@ class CustomOrderStepper extends StatelessWidget {
                       height: 1,
                       color:isPreesed ? OColors.primary: OColors.grey
                   ),
-
                   Container(
                     height: OSizes.imageSize,
                     width: 75.w,

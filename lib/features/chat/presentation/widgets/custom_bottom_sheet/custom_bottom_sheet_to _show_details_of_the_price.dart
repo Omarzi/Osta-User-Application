@@ -10,7 +10,7 @@ class _CustomBottomSheetToShowDetailsOfThePriceState extends State<CustomBottomS
   @override
 
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 420.h,
       child: Padding(
         padding:  EdgeInsets.only(top: OSizes.spaceBtwItems,left: OSizes.spaceBtwItems,right: OSizes.spaceBtwItems),
@@ -26,17 +26,16 @@ class _CustomBottomSheetToShowDetailsOfThePriceState extends State<CustomBottomS
                   separatorBuilder: (context ,index){
                     return Padding(
                       padding:  EdgeInsets.symmetric(vertical: OSizes.spaceBtwItems),
-                      child: CustomDotsDivider(),
-                    );
+                      child: const CustomDotsDivider(),);
                   },
-                  itemCount:OConstants.typeTextForBottomSheetInDetailsPrice.length ),
+                  itemCount:OConstants.typeTextForBottomSheetInDetailsPrice.length),
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: OSizes.spaceBtwItems),
-              child: CustomDotsDivider(),
+              child: const CustomDotsDivider(),
             ),
             CustomTextOfDetailsMoney2(type: "Total", price: "275 EGB"),
-            SizedBox(height: OSizes.spaceBtwItems * 2,),
+            SizedBox(height: OSizes.spaceBtwItems * 2),
             CustomButtomNavigationInChat(),
           ],
         ),

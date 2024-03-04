@@ -17,7 +17,6 @@ class CustomSlider extends StatelessWidget {
           children: [
             /// Make Space
             SizedBox(height: 20.h),
-
             /// Banner
             CarouselSlider.builder(
               itemBuilder: (BuildContext context, int index, int i) {

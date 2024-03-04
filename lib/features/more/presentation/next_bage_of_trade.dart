@@ -1,7 +1,7 @@
 import '../../../utils/constants/exports.dart';
 
 class NextBagOfTrade extends StatefulWidget {
-   NextBagOfTrade({Key? key}) : super(key: key);
+   const NextBagOfTrade({Key? key}) : super(key: key);
 
   @override
   State<NextBagOfTrade> createState() => _NextBagOfTradeState();
@@ -37,22 +37,22 @@ class _NextBagOfTradeState extends State<NextBagOfTrade> {
         SizedBox(height: OSizes.spaceBtwItems),
         Padding(
           padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBtwItems),
-          child: Divider(thickness: 1.2,color: OColors.grey),
+          child: const Divider(thickness: 1.2,color: OColors.grey),
         ),
         SizedBox(height: OSizes.spaceBtwItems),
         Text("Please enter your bank account details",style: Theme.of(context).textTheme.titleLarge),
         SizedBox(height: OSizes.spaceBtwItems * 2),
-        CustomTextFormFeild3(hintText: "Account Holder's Name", controller: controller,label:
+        CustomTextFormField1(hintText: "Account Holder's Name", controller: controller,label:
         Text("Account Holder's Name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),),
         SizedBox(height: OSizes.spaceBtwItems),
-        CustomTextFormFeild3(hintText: "account number", controller: controller,label:
+        CustomTextFormField1(hintText: "account number", controller: controller,label:
         Text("account number",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),),
         SizedBox(height: OSizes.spaceBtwItems),
-        CustomTextFormFeild3(hintText: "Bank name", controller: controller,label:
+        CustomTextFormField1(hintText: "Bank name", controller: controller,label:
         Text("Bank name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
         ),
         SizedBox(height: OSizes.spaceBtwItems),
-        CustomTextFormFeild3(hintText: "Account number IBAN", controller: controller,label:
+        CustomTextFormField1(hintText: "Account number IBAN", controller: controller,label:
         Text("Account number IBAN",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue),),
         ),
         SizedBox(height: OSizes.spaceBtwItems),

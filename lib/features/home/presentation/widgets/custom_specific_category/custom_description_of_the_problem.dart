@@ -19,7 +19,6 @@ class CustomContainerDescriptionOfTheProblem extends StatelessWidget {
                   .copyWith(color: OColors.blue),
             ),
           ),
-
           Stack(
             children:[
               TextFormField(

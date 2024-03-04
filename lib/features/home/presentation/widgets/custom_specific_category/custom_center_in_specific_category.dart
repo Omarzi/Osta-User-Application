@@ -1,8 +1,7 @@
 import '../../../../../utils/constants/exports.dart';
 
-
 class CustomCenterInSpecificCategory extends StatefulWidget {
-   CustomCenterInSpecificCategory({Key? key}) : super(key: key);
+   const CustomCenterInSpecificCategory({Key? key}) : super(key: key);
 
   @override
   State<CustomCenterInSpecificCategory> createState() => _CustomCenterInSpecificCategoryState();
@@ -12,6 +11,7 @@ class _CustomCenterInSpecificCategoryState extends State<CustomCenterInSpecificC
 
   bool isChecked=false;
 
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding:  EdgeInsets.only(top: 10.h,bottom: 15.h),

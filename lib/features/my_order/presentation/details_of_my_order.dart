@@ -1,9 +1,3 @@
-import 'package:osta_app/features/my_order/presentation/widget/custom_bottom_details_order/custom_bottom_detalis_order.dart';
-import 'package:osta_app/features/my_order/presentation/widget/custom_bottom_navigation_bar_in_my_order/custom_bottom_navigation_bar_in_my_order.dart';
-import 'package:osta_app/features/my_order/presentation/widget/custom_container_parment_method/custom_container_payment_method.dart';
-import 'package:osta_app/features/my_order/presentation/widget/custom_order_stepper/custom_order_stepper.dart';
-import 'package:osta_app/features/my_order/presentation/widget/custom_product_in_details_order/custom_product_in_details_order.dart';
-
 import '../../../utils/constants/exports.dart';
 
 class DetailsOfMyOrderScreen extends StatefulWidget {
@@ -21,17 +15,17 @@ class _DetailsOfMyOrderScreenState extends State<DetailsOfMyOrderScreen> {
 
     return Scaffold(
       appBar: OAppBar(
-        title: Text("Order details",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white),),
+        title: Text("Order details",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white)),
         centerTitle: true,
         actions: [
           Padding(
             padding:  EdgeInsets.symmetric(horizontal: OSizes.spaceBtwTexts),
             child: GestureDetector(
                 onTap: (){context.pushNamed(ORoutesName.technicalSupportChatRout);},
-                child: Image.asset(OImages.iconChat,width: 40.w,)),
+                child: Image.asset(OImages.iconChat,width: 40.w)),
           )
         ],
-        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white,),
+        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -39,6 +33,7 @@ class _DetailsOfMyOrderScreenState extends State<DetailsOfMyOrderScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+
               CustomOrderData(map: widget.map),
               SizedBox(height: OSizes.spaceBtwItems),
               CustomOrderStepper(),
@@ -51,7 +46,7 @@ class _DetailsOfMyOrderScreenState extends State<DetailsOfMyOrderScreen> {
               SizedBox(height: OSizes.spaceBtwItems),
               CustomContainerAddressInSpecificCategory(imageLocation: OImages.location,isChecked: false),
               SizedBox(height: OSizes.spaceBtwItems),
-              CustomContainerPaymentMethod(),
+              const CustomContainerPaymentMethod(),
               SizedBox(height: OSizes.spaceBtwItems),
               CustomBottomDetailsOrder(onTap: (){
                 showBottomSheetInMyOrder();
@@ -73,7 +68,7 @@ class _DetailsOfMyOrderScreenState extends State<DetailsOfMyOrderScreen> {
          // isScrollControlled: true,
          context: context,
          builder: (context) {
-           return BottomSheetInMyOrder();
+           return const BottomSheetInMyOrder();
          });
    }
 }

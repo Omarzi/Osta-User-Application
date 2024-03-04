@@ -19,11 +19,11 @@ class ModifyPasswordScreen extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: OSizes.spaceBtwItems * 1.5),
-              CustomTextFormFeild3(label: const Text("Current Password"), hintText: "***********", controller: controller,suffixIcon: Iconsax.edit),
+              CustomTextFormField1(label: const Text("Current Password"), hintText: "***********", controller: controller,suffixIcon: Iconsax.edit),
               SizedBox(height: OSizes.spaceBtwItems * 1.5),
-              CustomTextFormFeild3(label: const Text("New Password"), hintText: "***********", controller: controller,suffixIcon: Icons.visibility),
+              CustomTextFormField1(label: const Text("New Password"), hintText: "***********", controller: controller,suffixIcon: Icons.visibility),
               SizedBox(height: OSizes.spaceBtwItems * 1.5),
-              CustomTextFormFeild3(label: const Text("confirm password"), hintText: "***********", controller: controller,suffixIcon: Icons.visibility),
+              CustomTextFormField1(label: const Text("confirm password"), hintText: "***********", controller: controller,suffixIcon: Icons.visibility),
 
             ],
           ),

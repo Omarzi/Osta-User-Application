@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:osta_app/utils/constants/exports.dart';
 
 class TypeOfProductScreen extends StatelessWidget {

@@ -21,7 +21,7 @@ class CustomContainerHelpCenter extends StatelessWidget {
           child: Row(
             children: [
               Text(textHelpCenter,style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),
-              Spacer(),
+              const Spacer(),
               Icon(isEnglish ? Icons.arrow_forward_ios : Icons.arrow_back_ios,size: 23.sp),
             ],
           ),

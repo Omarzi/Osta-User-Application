@@ -18,7 +18,7 @@ class _CustomPhoneTextFormFieldState extends State<CustomPhoneTextFormField> {
     return Form(
       key: phoneLoginFormKey,
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: OSizes.spaceBtwSections),
+        padding: EdgeInsets.symmetric(vertical: 0),
         child: Column(
           children: [
             /// Phone Number

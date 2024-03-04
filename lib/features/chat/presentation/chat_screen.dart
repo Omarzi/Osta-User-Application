@@ -1,7 +1,7 @@
 import '../../../utils/constants/exports.dart';
 
 class ChatScreen extends StatefulWidget {
-   ChatScreen({Key? key}) : super(key: key);
+   const ChatScreen({Key? key}) : super(key: key);
 
   @override
   State<ChatScreen> createState() => _ChatScreenState();
@@ -15,7 +15,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     return Scaffold(
       appBar: OAppBar(
-        title: Text("Order Number:450450",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white),),
+        title: Text("Order Number:450450",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.white)),
         centerTitle: true,
         actions: [
                Padding(
@@ -23,32 +23,32 @@ class _ChatScreenState extends State<ChatScreen> {
                  child: Image.asset(OImages.iconChat,width: 40.w,),
                )
         ],
-        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white,),
+        leadingWidget: IconButton(onPressed: () => context.pop(), icon: Icon(isEnglish ? Iconsax.arrow_left : Iconsax.arrow_right_1),color: OColors.white),
       ),
       body:
          Stack(
            children: [
              SingleChildScrollView(
                child: Padding(
-                 padding: EdgeInsets.only(top: height / 10,left: OSizes.spaceBetweenIcon,right: OSizes.spaceBetweenIcon,bottom:OSizes.spaceBtwItems  ),
+                 padding: EdgeInsets.only(top: height / 10,left: OSizes.spaceBetweenIcon,right: OSizes.spaceBetweenIcon,bottom:OSizes.spaceBtwItems),
                  child: Column(
                    children: [
                      /// Make Space
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
-                     Row(
+                     const Row(
                        children: [
                          CustomContainerSendMessageDescriptionOfTheProblem(),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
-                     Row(mainAxisAlignment: MainAxisAlignment.end,
+                     const Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
                          CustomContainerDesOfTheMoney(),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
@@ -58,7 +58,7 @@ class _ChatScreenState extends State<ChatScreen> {
                            text1:"Hello,I'am Amira Adel\nI am happy to serve you today. Please confirm your order",),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.start,
                        children: [
@@ -69,7 +69,7 @@ class _ChatScreenState extends State<ChatScreen> {
                              child: CustomSendText(text: "Confirmation", time: "4:31PM")),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
@@ -78,7 +78,7 @@ class _ChatScreenState extends State<ChatScreen> {
                          ),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
@@ -87,14 +87,14 @@ class _ChatScreenState extends State<ChatScreen> {
                          ),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send  Text Message
                      Row(mainAxisAlignment: MainAxisAlignment.start,
                        children: [
                          CustomSendText(text: "Have been reached", time: "4:31PM"),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
@@ -105,14 +105,14 @@ class _ChatScreenState extends State<ChatScreen> {
                          ),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send  Text Message
                      Row(mainAxisAlignment: MainAxisAlignment.start,
                        children: [
                          CustomSendText(text: "Reject", time: "4:31PM"),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
@@ -122,14 +122,14 @@ class _ChatScreenState extends State<ChatScreen> {
                            width: 250.w,
                            onTap: (){},
                          ),],),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send  Text Message
                      Row(mainAxisAlignment: MainAxisAlignment.start,
                        children: [
                          CustomSendText(text: "The service has ended", time: "4:31PM"),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send Message
                      Row(mainAxisAlignment: MainAxisAlignment.end,
                        children: [
@@ -143,7 +143,7 @@ class _ChatScreenState extends State<ChatScreen> {
                          ),
                        ],
                      ),
-                     SizedBox(height: OSizes.spaceBtwItems,),
+                     SizedBox(height: OSizes.spaceBtwItems),
                      /// Container Send  Text Message
                      Align(
                        alignment: Alignment.bottomCenter,
@@ -153,21 +153,21 @@ class _ChatScreenState extends State<ChatScreen> {
                          ],
                        ),
                      ),],),),),
-             CustomContainerDataOfUser(),
+             const CustomContainerDataOfUser(),
            ],
          ),
-            bottomNavigationBar: Container(
+            bottomNavigationBar: SizedBox(
                 height: height / 4.9,
-                child: Column(
+                child:  Column(
                   children: [
-                    CustomContainerEnded(),
+                    const CustomContainerEnded(),
                     CustomButtomNavigationInChat(),
                   ],
                 )),
     );
   }
 
-   void showBottomSheet() {
+  void showBottomSheet() {
      showModalBottomSheet(
          shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(
              topLeft: Radius.circular(OSizes.productImageRadius),
@@ -176,7 +176,7 @@ class _ChatScreenState extends State<ChatScreen> {
          isScrollControlled: true,
          context: context,
          builder: (context) {
-           return CustomBottomSheetInChat();
+           return const CustomBottomSheetInChat();
          });
    }
   void showBottomSheet2() {
@@ -188,7 +188,7 @@ class _ChatScreenState extends State<ChatScreen> {
       backgroundColor: OColors.white,
         context: context,
         builder: (context) {
-          return CustomBottomSheetToShowDetailsOfThePrice();
+          return const CustomBottomSheetToShowDetailsOfThePrice();
         });
   }
 }

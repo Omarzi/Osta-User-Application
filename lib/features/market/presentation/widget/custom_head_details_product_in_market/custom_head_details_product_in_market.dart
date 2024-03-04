@@ -1,4 +1,3 @@
-
 import '../../../../../utils/constants/exports.dart';
 
 class CustomHeadDetailsProductInMarket extends StatelessWidget {

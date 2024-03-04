@@ -37,7 +37,7 @@ class CustomSendFromTechnicalSupport extends StatelessWidget {
               width: 1.5.w,
             ),
           ),
-          child: Text("Lorem Ipsum is simply a formal text, meaning that the purpose is the form, not the content, and is used in the printing and publishing industries"),
+          child: const Text("Lorem Ipsum is simply a formal text, meaning that the purpose is the form, not the content, and is used in the printing and publishing industries"),
         ),
         SizedBox(height: OSizes.spaceBtwTexts),
         Padding(

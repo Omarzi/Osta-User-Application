@@ -23,21 +23,12 @@ class CustomDataInCreditCard extends StatelessWidget {
           child: Column(
             children: [
               ///User Name
-              CustomTextFormFeildINBotttomSheetPayment(
-                labelText: "User Name",
-                controller: userNameController,
-                hintText: "Amira Adel",
-              ),
-
+              CustomTextFormField1(hintText: "Amira Adel", controller: userNameController,label: Text("User Name",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),),
               /// Make Some Space
               SizedBox(height: OSizes.spaceBtwInputFields),
 
               ///card Number
-              CustomTextFormFeildINBotttomSheetPayment(
-                labelText: "Card Number",
-                controller: cardNumber,
-                hintText: "0000 0000 000 00",
-              ),
+              CustomTextFormField1(hintText: "0000 0000 000 00", controller: cardNumber,label: Text("Card Number",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),),
 
               /// Make Some Space
               SizedBox(height: OSizes.spaceBtwInputFields),
@@ -46,27 +37,15 @@ class CustomDataInCreditCard extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: CustomTextFormFeildINBotttomSheetPayment(
-                      labelText: "CVV",
-                      controller: cvv,
-                      hintText: "cvv",
-                    ),
+                    child:CustomTextFormField1(hintText: "cvv", controller: cvv,label: Text("CVV",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),),
                   ),
-                  SizedBox(
-                    width: OSizes.spaceBtwItems,
-                  ),
+                  SizedBox(width: OSizes.spaceBtwItems),
                   Expanded(
-                    child: CustomTextFormFeildINBotttomSheetPayment(
-                      labelText: "MM/YY",
-                      controller: mmyy,
-                      hintText: "mm/yy",
-                    ),
+                    child:CustomTextFormField1(hintText: "mm/yy", controller: mmyy,label: Text("MM/YY",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.blue)),),
                   ),
                 ],
               ),
-              SizedBox(
-                height: 10.h,
-              ),
+              SizedBox(height: 10.h,),
             ],
           )),
     );

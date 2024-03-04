@@ -52,11 +52,35 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
   @override
+  AnimationController? animationController;
+  Animation<double>? fadingAnimation;
+
   void initState() {
     super.initState();
+    initSlidingAnimation();
     checkLocationPermission();
+  }
+
+  @override
+  void dispose() {
+    animationController!.dispose();
+    super.dispose();
+  }
+
+  /// Make Animation
+  void initSlidingAnimation() {
+    animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 700),
+    );
+
+    fadingAnimation =
+        Tween<double>(begin: 0.2, end: 1).animate(animationController!);
+
+    animationController!.repeat(reverse: true);
   }
 
   @override
@@ -74,7 +98,15 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Center(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 90.w),
-            child: SvgPicture.asset(OImages.appIcon),
+            child: AnimatedBuilder(
+              animation: fadingAnimation!,
+              builder: (context, child) {
+                return Opacity(
+                  opacity: fadingAnimation!.value,
+                  child: SvgPicture.asset(OImages.appIcon),
+                );
+              },
+            ),
           ),
         ),
       ),
@@ -112,8 +144,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void navigationToHome() {
     Future.delayed(
-      const Duration(seconds: 3),
-          () => context.pushReplacementNamed(ORoutesName.onBoardingRoute),
+      const Duration(seconds: 4),
+      () => context.pushReplacementNamed(ORoutesName.onBoardingRoute),
     );
   }
 }

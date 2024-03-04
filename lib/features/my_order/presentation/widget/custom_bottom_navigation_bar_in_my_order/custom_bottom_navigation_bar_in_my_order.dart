@@ -5,7 +5,7 @@ class BottomSheetInMyOrder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 250,
       child: Padding(
         padding:  EdgeInsets.only(top: OSizes.spaceBtwItems,left: OSizes.spaceBtwTexts2,right: OSizes.spaceBtwTexts2),
@@ -14,22 +14,22 @@ class BottomSheetInMyOrder extends StatelessWidget {
             CustomTextOfDetailsMoney(type: "Order value", price: "5.250 EGB"),
             Padding(
               padding:  EdgeInsets.symmetric(vertical: OSizes.spaceBtwTexts2 * 1.5),
-              child: CustomDotsDivider(),
+              child: const CustomDotsDivider(),
             ),
             CustomTextOfDetailsMoney(type: "Tax", price: "5 EGB"),
             Padding(
               padding:  EdgeInsets.symmetric(vertical: OSizes.spaceBtwTexts2 * 1.5),
-              child: CustomDotsDivider(),
+              child: const CustomDotsDivider(),
             ),
             CustomTextOfDetailsMoney(type: "Delivery value", price: "20 EGB"),
             Padding(
               padding:  EdgeInsets.symmetric(vertical: OSizes.spaceBtwTexts2 * 1.5),
-              child: CustomDotsDivider(),
+              child: const CustomDotsDivider(),
             ),
             CustomTextOfDetailsMoney(type: "Discount", price: "-50 EGB"),
             Padding(
               padding:  EdgeInsets.symmetric(vertical: OSizes.spaceBtwTexts2 * 1.5),
-              child: CustomDotsDivider(),
+              child: const CustomDotsDivider(),
             ),
             CustomTextOfDetailsMoney2(type: "Total ", price: "5.255 EGB"),
           ],

@@ -1,4 +1,3 @@
-import 'package:osta_app/common/widgets/button/custom_reload_button.dart';
 
 import '../../../../../../utils/constants/exports.dart';
 
@@ -65,42 +64,30 @@ class _CustomContainerMyOrderState extends State<CustomContainerMyOrder> {
           Expanded(
               flex: 5,
               child: Container(
-                padding: EdgeInsets.only(left: OSizes.padding * 1.5,right: OSizes.padding * 1.5),
+                padding: EdgeInsets.only(left: OSizes.padding * 1.5,right: OSizes.padding * 1.5,top: OSizes.spaceBtwItems),
               decoration: BoxDecoration(
                 color: OColors.white,
                 borderRadius: BorderRadius.only(bottomRight: Radius.circular(OSizes.borderRadiusLg), bottomLeft: Radius.circular(OSizes.borderRadiusLg)),
               ),
-                child: Column(mainAxisAlignment: MainAxisAlignment.start,
+                child: Column(
+                  // mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Text("Amira Adel", style: Theme.of(context).textTheme.titleLarge),
                     Row(
                       children: [
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: OSizes.space * 1.5 ,vertical: OSizes.spaceBtwItems,),
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text("Amira Adel", style: Theme.of(context).textTheme.titleLarge,),
-                              Row(
-                                children: [
-                                _buildRatingStars(1),
-                                SizedBox(width: OSizes.spaceBtwTexts),
-                                Text("4.5"),
-                              ],),
-
-                            ],
-                          ),
-                        ),
-                        Spacer(),
-                       SizedBox(child: widget.widget,)
-                      ],
-                    ),
-                    Text("Order Number 584746 : ", style: Theme.of(context).textTheme.titleMedium,),
-                    SizedBox(height: OSizes.spaceBtwTexts,),
+                      _buildRatingStars(1),
+                      SizedBox(width: OSizes.spaceBtwTexts),
+                      Text("4.5"),
+                    ],),
+                    SizedBox(height: OSizes.spaceBtwTexts2),
+                    SizedBox(child: widget.widget),
+                    Text("Order Number 584746 : ", style: Theme.of(context).textTheme.titleMedium),
+                    SizedBox(height: OSizes.spaceBtwTexts),
                     Text("Description of the problem", style: Theme.of(context).textTheme.titleMedium!.copyWith(color: OColors.blue),),
-                    SizedBox(height: OSizes.spaceBtwTexts2,),
+                    SizedBox(height: OSizes.spaceBtwTexts2),
                     Text("Lorem Ipsum is a method of writing texts in Graphic design is commonly used", style: Theme.of(context).textTheme.titleSmall!.copyWith(color: OColors.grey2),),
-                    SizedBox(height: OSizes.spaceBtwTexts2 ,),
+                    SizedBox(height: OSizes.spaceBtwTexts2),
                     CustomTextOfDetailsMoney2(type: "Total 225 EGB ", price: ""),
                     widget.isChecked?Row(mainAxisAlignment: MainAxisAlignment.end,
                       children: [

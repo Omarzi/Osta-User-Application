@@ -22,7 +22,7 @@ TextEditingController controller = TextEditingController();
                 SizedBox(height: OSizes.spaceBtwItems),
                 Text("Get 10 pounds free credit",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.iconCall)),
               SizedBox(height: OSizes.spaceBtwItems),
-              Text("20 pounds when they order. Share the application and give your friends 10 pounds for any service, and you will get the credit for completing the order."),
+              const Text("20 pounds when they order. Share the application and give your friends 10 pounds for any service, and you will get the credit for completing the order."),
               SizedBox(height: OSizes.spaceBtwItems),
               Row(
                 children: [
@@ -36,18 +36,18 @@ TextEditingController controller = TextEditingController();
                     child: const Icon(Iconsax.share, color: OColors.white),
                   ),
                   SizedBox(width: 20.w),
-                  Expanded(child: CustomTextFormField4(textEditingController: controller, labelText: '5847GQ54', suffixIcon: const Icon(Icons.copy, color: OColors.primary))),
+                  Expanded(child: CustomTextFormField2(textEditingController: controller, labelText: '5847GQ54', suffixIcon: const Icon(Icons.copy, color: OColors.primary))),
                 ],
               ),
               Padding(
                 padding:  EdgeInsets.all(OSizes.spaceBtwItems),
-                child: Divider(thickness: 1.2,color: OColors.grey),
+                child: const Divider(thickness: 1.2,color: OColors.grey),
               ),
               Image.asset(OImages.invite),
               SizedBox(height: OSizes.spaceBtwItems),
               Text("If you were invited by a friend",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.iconCall)),
               SizedBox(height: OSizes.spaceBtwItems),
-              Text("Please enter your friend's invite code here"),
+              const Text("Please enter your friend's invite code here"),
               Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: OSizes.spaceBtwItems * 4,

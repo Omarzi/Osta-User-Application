@@ -26,7 +26,7 @@ class CustomAlertDialogInConfirmation extends StatelessWidget {
                   backgroundColor: bgCircle,
                   radius: 50.r,
                   child: Center(
-                    child: Image.asset("$image"),
+                    child: Image.asset(image),
                   ),
                 )
             ),

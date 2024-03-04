@@ -1,8 +1,8 @@
 import '../../../../../utils/constants/exports.dart';
 
 class CustomContainerShowAllOrder extends StatelessWidget {
-   CustomContainerShowAllOrder({Key? key,required this.numberOfStores,required this.onTap,required this.orderNumer }) : super(key: key);
-String numberOfStores, orderNumer;
+   CustomContainerShowAllOrder({Key? key,required this.numberOfStores,required this.onTap,required this.orderNumber }) : super(key: key);
+String numberOfStores, orderNumber;
 VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ VoidCallback onTap;
                               width: 20.w),
                         ),
                         SizedBox(width: OSizes.spaceBtwTexts2,),
-                        Text("Order Number : $orderNumer",
+                        Text("Order Number : $orderNumber",
                         style: Theme.of(context).textTheme.titleLarge!.copyWith(color: OColors.textInMyOrder1),
                         ),
                       ],

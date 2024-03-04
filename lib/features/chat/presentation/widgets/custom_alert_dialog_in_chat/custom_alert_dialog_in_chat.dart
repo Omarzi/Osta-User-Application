@@ -1,4 +1,3 @@
-import 'package:dotted_border/dotted_border.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomAlertDialogInChat extends StatelessWidget {
@@ -29,7 +28,7 @@ class CustomAlertDialogInChat extends StatelessWidget {
                   backgroundColor: bgCircle,
                   radius: 50.r,
                   child: Center(
-                    child: Image.asset("$image"),
+                    child: Image.asset(image),
                   ),
                 )
             ),
@@ -47,7 +46,7 @@ class CustomAlertDialogInChat extends StatelessWidget {
                ],
              ),
            ],
-         ):SizedBox(height: 0)
+         ):const SizedBox(height: 0)
         ],
       ),
       content: Row(mainAxisAlignment: MainAxisAlignment.center,

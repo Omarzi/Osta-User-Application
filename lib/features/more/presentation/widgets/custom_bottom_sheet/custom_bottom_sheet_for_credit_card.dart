@@ -1,8 +1,7 @@
-import 'package:osta_app/features/more/presentation/widgets/custom_bottom_sheet/custom_bottom_sheet_for_recharge_balance2.dart';
 import '../../../../../utils/constants/exports.dart';
 
 class CustomBottomSheetForCreditCard extends StatefulWidget {
-  CustomBottomSheetForCreditCard({Key? key}) : super(key: key);
+  const CustomBottomSheetForCreditCard({Key? key}) : super(key: key);
 
   @override
   State<CustomBottomSheetForCreditCard> createState() =>
@@ -17,26 +16,26 @@ class _CustomBottomSheetForCreditCardState
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    return Container(
+    return SizedBox(
       height: height / 1,
       child: Padding(
         padding: EdgeInsets.symmetric(
             horizontal: OSizes.spaceBtwItems, vertical: OSizes.spaceBtwTexts2),
         child: Column(
           children: [
-            CustomCloseButton(),
+            const CustomCloseButton(),
             Text("Credit cards",
                 style: Theme.of(context)
                     .textTheme
                     .titleLarge!
                     .copyWith(color: OColors.blue)),
             SizedBox(height: OSizes.spaceBtwTexts2),
-            Text("Enter payment card information"),
+            const Text("Enter payment card information"),
             SizedBox(height: OSizes.spaceBtwTexts2),
             CustomDataInCreditCard(),
-            Spacer(),
+            const Spacer(),
             CustomButton2(
-                text: "Confirmtion",
+                text: "Confirmation",
                 onTap: () {
                   context.pop();
                   showAlertDialogForCreditCard2();

@@ -23,7 +23,7 @@ class _OrderConfirmationScreenState extends State<OrderConfirmationScreen> {
             children: [
               CustomContainerAddressInSpecificCategory(imageLocation: OImages.location2,isChecked: true),
               SizedBox(height: OSizes.spaceBtwTexts2),
-              Divider(thickness: 0.5),
+              const Divider(thickness: 0.5),
               SizedBox(height: OSizes.spaceBtwTexts2),
               Row(
                 children: [
@@ -33,14 +33,11 @@ class _OrderConfirmationScreenState extends State<OrderConfirmationScreen> {
                 ],
               ),
               SizedBox(height: OSizes.spaceBtwItems),
-              CustomRadioButtonInChat(),
+              const CustomRadioButtonInChat(),
               SizedBox(height: OSizes.spaceBtwTexts2),
-              CustomContainerInBottomShoppingCart(),
+              const CustomContainerInBottomShoppingCart(),
               SizedBox(height: OSizes.spaceBtwItems),
-              CustomButton2(text: "Confirmation", onTap: (){
-                setState(() {
-                  showAlertDialogToConfirmationOrder();
-                });
+              CustomButton2(text: "Confirmation", onTap: (){setState(() {showAlertDialogToConfirmationOrder();});
               },height: OSizes.imageSize * 1.2,)
             ],
           ),

@@ -38,7 +38,7 @@ class CustomDiscountCode extends StatelessWidget {
                 Text("We56rQf41",
                 style: Theme.of(context).textTheme.bodySmall!.copyWith(color: OColors.labelColor),
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   height: 50.w,
                   width: 45.w,
@@ -47,7 +47,7 @@ class CustomDiscountCode extends StatelessWidget {
                     topRight: Radius.circular(15.r),
                     bottomRight: Radius.circular(15.r),
                   ),
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [Color(0xFF2ED3C1), Color(0xFF33B4E5)],
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
@@ -65,7 +65,7 @@ class CustomDiscountCode extends StatelessWidget {
           ),
           SizedBox(height: 5.h,),
           Text("You have a discount of 30 pounds from the order value",
-          style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Color(0xffFBAE00)),
+          style: Theme.of(context).textTheme.bodySmall!.copyWith(color: const Color(0xffFBAE00)),
           )
         ],
       ),

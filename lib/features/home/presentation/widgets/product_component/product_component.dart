@@ -9,11 +9,13 @@ class ProductComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 111.w,
-        height: 112.h,
+        // width: 111.w,
+        // height: 112.h,
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(8.r),
@@ -30,15 +32,14 @@ class ProductComponent extends StatelessWidget {
           children: [
             SizedBox(height: 2.h,),
             Image.asset("assets/images/product1.png",width: 77.w,height: 77.h,),
-           Spacer(),
+           const Spacer(),
            Column(mainAxisAlignment: MainAxisAlignment.end,
              children: [
                Row(
                  children: [
                    Expanded(
                      child: Container(
-                       height: 27.h,
-                       width: 111.w,
+                       height: height / 14,
                        decoration: BoxDecoration(
                            color: OColors.white.withOpacity(0.3),
 

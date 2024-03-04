@@ -26,7 +26,7 @@ class CustomSendFromUser extends StatelessWidget {
             ),
             color: OColors.bgContainerInMyOrder1,
           ),
-          child: Text("Lorem Ipsum is simply a formal text, meaning that the purpose is the form, not the content"),
+          child: const Text("Lorem Ipsum is simply a formal text, meaning that the purpose is the form, not the content"),
         ),
         SizedBox(height: OSizes.spaceBtwTexts),
         Padding(

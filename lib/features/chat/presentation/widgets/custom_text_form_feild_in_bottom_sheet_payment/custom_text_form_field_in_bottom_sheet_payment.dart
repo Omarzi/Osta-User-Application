@@ -1,7 +1,7 @@
 import '../../../../../utils/constants/exports.dart';
 
-class CustomTextFormFeildINBotttomSheetPayment extends StatelessWidget {
-   CustomTextFormFeildINBotttomSheetPayment({Key? key,required this.labelText,required this.controller, required this.hintText}) : super(key: key);
+class CustomTextFormFeildINBottomSheetPayment extends StatelessWidget {
+   CustomTextFormFeildINBottomSheetPayment({Key? key,required this.labelText,required this.controller, required this.hintText}) : super(key: key);
     TextEditingController controller =TextEditingController();
     String labelText,hintText;
   @override
