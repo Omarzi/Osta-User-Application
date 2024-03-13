@@ -9,6 +9,10 @@ class OColors {
   static const Color primaryDark = Colors.blueGrey;
   static const Color accent = Color(0xFFB0C7FF);
   static const Color blue = Color(0xFF2370A2);
+  static const Color darkBlueColor = Color(0xff263238);
+  static const Color whiteLevel = Color(0xffEBEBEB);
+
+
 
   /// Gradient Colors
   static const Gradient linerGradient = LinearGradient(

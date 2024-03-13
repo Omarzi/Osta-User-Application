@@ -8,6 +8,7 @@ class OImages {
   static const String appIcon = 'assets/icons/ostaLogo.svg';
   // static const String appIconSVG = 'assets/icons/appIcon.svg';
   static const String appIcon2 = 'assets/icons/ostaLogo2.svg';
+  static const String iconAdd = 'assets/images/iconAdd.png';
 
   /// -- OnBoarding Images
   static const String onBoardingImage1 = 'assets/images/on_boarding_images/on-boarding-image1.svg';
@@ -142,6 +143,10 @@ class OImages {
   static const String gift = "assets/images/gift.png";
   static const String copy = "assets/images/copy.png";
   static const String notification = "assets/images/notification.png";
+
+
+  ///Lottie
+  static const String driverLottie = "assets/images/animations/driver.json";
 
 
 }

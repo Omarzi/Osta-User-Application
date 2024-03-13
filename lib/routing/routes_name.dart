@@ -17,6 +17,7 @@ class ORoutesName {
 
   /// Home Screen
  static const String homeOfRequestAContractor = "home-of-request-a-ontractor-route";
+ static const String negotiationListRoute = "negotiation-list-route";
 
  ///Request Contractor
   static const String specificOfCategoryInRequestContactor = "specific-of-cateqory-request-ontractor-route";

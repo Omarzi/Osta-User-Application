@@ -138,7 +138,7 @@ export 'package:osta_app/features/market/presentation/widget/custom_category_in_
 export 'package:osta_app/features/market/presentation/widget/custom_container_bottom_in_market/custom_container_bottom_in_market.dart';
 export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_confirmation.dart';
 export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_confirmation2.dart';
-export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_data_of_user.dart';
+export 'package:osta_app/features/chat/presentation/widgets/custom_container_data_of_user/custom_container_data_of_user.dart';
 export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_des_of_the_money.dart';
 export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_container_send_message.dart';
 export 'package:osta_app/features/chat/presentation/widgets/custom_container_send_message/custom_send_text.dart';

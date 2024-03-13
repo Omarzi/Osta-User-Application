@@ -1,3 +1,4 @@
+import 'package:osta_app/features/home/presentation/negotiation_list_screen.dart';
 import 'package:osta_app/features/more/presentation/add_new_adress_screen.dart';
 import 'package:osta_app/features/more/presentation/aplication_language.dart';
 import 'package:osta_app/features/more/presentation/be_a_partner_screen.dart';
@@ -97,6 +98,14 @@ class RouteGenerator {
       case ORoutesName.homeOfRequestAContractor:
         return PageTransition(
           child:  const HomeOfRequestAContractor(),
+          type: PageTransitionType.leftToRight,
+          settings: settings,
+          reverseDuration: const Duration(milliseconds: 500),
+        );
+
+      case ORoutesName.negotiationListRoute:
+        return PageTransition(
+          child:  const NegotiationListScreen(),
           type: PageTransitionType.leftToRight,
           settings: settings,
           reverseDuration: const Duration(milliseconds: 500),
